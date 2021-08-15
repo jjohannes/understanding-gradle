@@ -1,6 +1,8 @@
 # Understanding Gradle #01 – The Settings File
 
-[![Understanding Gradle #01 – The Settings File (Video)](https://onepiecesoftware.github.io/img/videos/01.png)](https://www.youtube.com/watch?v=Ajs8pTbg8as&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+**👇 click thumbnail to watch video**
+
+[<img src="https://onepiecesoftware.github.io/img/videos/01.png" width="640">](https://www.youtube.com/watch?v=Ajs8pTbg8as&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 In the very first instalment of my *Understanding Gradle* series I talk about the entry point of every Gradle project - the Settings File.
 

@@ -1,6 +1,8 @@
 # Understanding Gradle #02 – The Build Files
 
-[![Understanding Gradle #02 – The Build Files (Video)](https://onepiecesoftware.github.io/img/videos/02.png)](https://www.youtube.com/watch?v=iY92Z_jb3R0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+**👇 click thumbnail to watch video**
+
+[<img src="https://onepiecesoftware.github.io/img/videos/02.png" width="640">](https://www.youtube.com/watch?v=OKjE_Lt_66U&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 In this second entry in my *Understanding Gradle* series we look at what the central configuration scripts of Gradle – the Build Files – should be used for.
 

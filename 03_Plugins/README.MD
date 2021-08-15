@@ -1,6 +1,8 @@
 # Understanding Gradle #03 – Plugins
 
-[![Understanding Gradle #03 – Plugins (Video)](https://onepiecesoftware.github.io/img/videos/03.png)](https://www.youtube.com/watch?v=iY92Z_jb3R0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+**👇 click thumbnail to watch video**
+
+[<img src="https://onepiecesoftware.github.io/img/videos/03.png" width="640">](https://www.youtube.com/watch?v=N95YI-szd78&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 In the third series entry, we look at Plugins – probably the most important concept to understand to keep your projects well structured and maintainable.
 
