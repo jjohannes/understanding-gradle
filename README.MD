@@ -12,7 +12,8 @@ This gives you a general understanding of how things work in Gradle and enables 
 2. [The Build Files](02_The_Build_Files)
 3. [Plugins](03_Plugins)
 4. [Tasks](04_Tasks)
-5. ...
+5. [Lifecycle Tasks](05_Lifecycle_Tasks)
+6. ...
 
 ## Need Gradle support?
 
