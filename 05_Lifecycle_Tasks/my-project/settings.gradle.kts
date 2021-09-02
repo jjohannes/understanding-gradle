@@ -1,17 +1,12 @@
 rootProject.name = "my-project"
 
 pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-    }
+    repositories.gradlePluginPortal()
     includeBuild("../my-build-logic")
 }
 
 dependencyResolutionManagement {
-    repositories {
-        mavenCentral()
-    }
+    repositories.mavenCentral()
     includeBuild("../my-other-project")
 }
 
