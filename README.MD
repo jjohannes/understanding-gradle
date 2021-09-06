@@ -13,7 +13,8 @@ This gives you a general understanding of how things work in Gradle and enables 
 3. [Plugins](03_Plugins)
 4. [Tasks](04_Tasks)
 5. [Lifecycle Tasks](05_Lifecycle_Tasks)
-6. ...
+6. [Configuring Task Inputs and Outputs](06_Configuring_Task_Inputs_And_Outputs)
+7. ...
 
 ## Need Gradle support?
 
