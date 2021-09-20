@@ -8,6 +8,12 @@ tasks.named<TaskReportTask>("tasks") {
     displayGroup = myBuildGroup
 }
 
+tasks.register<TaskReportTask>("tasksAll") {
+    group = myBuildGroup
+    description = "Show additional tasks."
+    setShowDetail(true)
+}
+
 tasks.build {
     group = myBuildGroup
 }
