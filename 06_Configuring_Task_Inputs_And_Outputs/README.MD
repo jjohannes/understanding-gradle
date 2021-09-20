@@ -8,6 +8,11 @@ Configure a Task from scratch and understand the concept of Task Inputs and Outp
 
 The Gradle project in this folder is an updated version from the [previous video](../05_Lifecycle_Tasks).
 
+## Explore this sample
+
+This sample is best explored in [IntelliJ IDEA](https://www.jetbrains.com/idea/download).
+Open **`06_Configuring_Task_Inputs_And_Outputs/my-project`** in IDEA and confirm with _Trust Project_.
+
 ## Gradle User Manual references
 
 Each video only scratches the surfaces of the features shown.

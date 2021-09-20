@@ -8,6 +8,11 @@ In this second entry in my *Understanding Gradle* series we look at what the cen
 
 The Gradle project in this folder is an updated version from the [previous video](../01_The_Settings_File).
 
+## Explore this sample
+
+This sample is best explored in [IntelliJ IDEA](https://www.jetbrains.com/idea/download).
+Open **`02_The_Build_Files/my-project`** in IDEA and confirm with _Trust Project_.
+
 ## Gradle User Manual references
 
 Each video only scratches the surfaces of the features shown.

@@ -6,6 +6,11 @@
 
 In the very first instalment of my *Understanding Gradle* series I talk about the entry point of every Gradle project - the Settings File.
 
+## Explore this sample
+
+This sample is best explored in [IntelliJ IDEA](https://www.jetbrains.com/idea/download).
+Open **`01_The_Settings_File/my-project`** in IDEA and confirm with _Trust Project_.
+
 ## Gradle User Manual references
 
 Each video only scratches the surfaces of the features shown.

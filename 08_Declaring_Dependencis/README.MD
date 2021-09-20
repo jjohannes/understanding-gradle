@@ -8,6 +8,11 @@ How to declare dependencies using group/name coordinates and what are Configurat
 
 The Gradle project in this folder is an updated version from the [previous video](../07_Implementing_Tasks_and_Extensions).
 
+## Explore this sample
+
+This sample is best explored in [IntelliJ IDEA](https://www.jetbrains.com/idea/download).
+Open **`08_Declaring_Dependencis/my-project`** in IDEA and confirm with _Trust Project_.
+
 ## Gradle User Manual references
 
 Each video only scratches the surfaces of the features shown.

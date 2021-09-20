@@ -8,6 +8,11 @@ Let's talk about the basics of the Task concept in Gradle.
 
 The Gradle project in this folder is an updated version from the [previous video](../03_Plugins).
 
+## Explore this sample
+
+This sample is best explored in [IntelliJ IDEA](https://www.jetbrains.com/idea/download).
+Open **`04_Tasks/my-project`** in IDEA and confirm with _Trust Project_.
+
 ## Gradle User Manual references
 
 Each video only scratches the surfaces of the features shown.
