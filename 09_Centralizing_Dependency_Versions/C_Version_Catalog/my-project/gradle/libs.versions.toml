@@ -1,0 +1,11 @@
+
+
+
+
+
+
+
+
+[libraries]
+commons-lang3 = { module = "org.apache.commons:commons-lang3", version = "3.12.0" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version = "1.7.32"}

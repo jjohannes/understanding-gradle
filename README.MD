@@ -16,7 +16,8 @@ This gives you a general understanding of how things work in Gradle and enables 
 6. [Configuring Task Inputs and Outputs](06_Configuring_Task_Inputs_And_Outputs)
 7. [Implementing Tasks and Extensions](07_Implementing_Tasks_and_Extensions)
 8. [Declaring Dependencies](08_Declaring_Dependencis)
-9. ...
+9. [Centralizing Dependency Versions](09_Centralizing_Dependency_Versions)
+10. ...
 
 ## Need Gradle support?
 
