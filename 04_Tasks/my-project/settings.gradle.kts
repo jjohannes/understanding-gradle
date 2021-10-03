@@ -1,5 +1,3 @@
-rootProject.name = "my-project"
-
 pluginManagement {
     repositories.gradlePluginPortal()
     includeBuild("../my-build-logic")
@@ -9,6 +7,8 @@ dependencyResolutionManagement {
     repositories.mavenCentral()
     includeBuild("../my-other-project")
 }
+
+rootProject.name = "my-project"
 
 include("app")
 include("business-logic")

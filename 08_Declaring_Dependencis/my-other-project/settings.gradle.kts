@@ -1,5 +1,3 @@
-rootProject.name = "my-other-project"
-
 pluginManagement {
     repositories.gradlePluginPortal()
     includeBuild("../my-build-logic")
@@ -8,5 +6,7 @@ pluginManagement {
 dependencyResolutionManagement {
     repositories.mavenCentral()
 }
+
+rootProject.name = "my-other-project"
 
 include("shared-utils")

@@ -1,5 +1,3 @@
-rootProject.name = "my-project"
-
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -14,6 +12,8 @@ dependencyResolutionManagement {
     }
     includeBuild("../my-other-project")
 }
+
+rootProject.name = "my-project"
 
 include("app")
 include("business-logic")

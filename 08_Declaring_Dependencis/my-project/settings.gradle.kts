@@ -1,5 +1,3 @@
-rootProject.name = "my-project"
-
 // Locations of Gradle plugins
 pluginManagement {
     repositories.gradlePluginPortal()
@@ -12,6 +10,8 @@ dependencyResolutionManagement {
     includeBuild("../my-other-project")
     includeBuild(".")
 }
+
+rootProject.name = "my-project"
 
 include("app")
 include("business-logic")
