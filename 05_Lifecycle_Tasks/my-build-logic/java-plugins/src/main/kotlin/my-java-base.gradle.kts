@@ -29,6 +29,25 @@ tasks.register("qualityCheck") {
     dependsOn(tasks.testClasses, tasks.checkstyleTest)
 }
 
+// Hide lifecycle tasks from base plugin we have no use for
+tasks.buildDependents { group = "" }
+tasks.buildNeeded { group = "" }
+
+tasks.register("lifecycleTasks") {
+    group = "help"
+    description = "Displays the Lifecycle Tasks of project ':${project.name}'"
+    doLast {
+        println()
+        println("------------------------------------------------------------")
+        println("Lifecycle Tasks runnable from project ':${project.name}'")
+        println("------------------------------------------------------------")
+        println()
+        tasks.filter { it.actions.isEmpty() && !it.group.isNullOrEmpty() }.forEach {
+            println("${it.name} - ${it.description}")
+        }
+    }
+}
+
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(11))
 }
