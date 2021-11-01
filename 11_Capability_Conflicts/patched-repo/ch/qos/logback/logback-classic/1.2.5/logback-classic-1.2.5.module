@@ -1,0 +1,101 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ch.qos.logback",
+    "module": "logback-classic",
+    "version": "1.2.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": "6",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.32"
+          }
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-core",
+          "version": {
+            "requires": "1.2.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "logback-classic-1.2.5.jar",
+          "url": "logback-classic-1.2.5.jar"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "ch.qos.logback",
+          "name": "logback-classic",
+          "version": "1.2.5"
+        },
+        {
+          "group": "org.slf4j",
+          "name": "slf4j-impl",
+          "version": "1.7.32"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": "6",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.32"
+          }
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-core",
+          "version": {
+            "requires": "1.2.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "logback-classic-1.2.5.jar",
+          "url": "logback-classic-1.2.5.jar"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "ch.qos.logback",
+          "name": "logback-classic",
+          "version": "1.2.5"
+        },
+        {
+          "group": "org.slf4j",
+          "name": "slf4j-impl",
+          "version": "1.7.32"
+        }
+      ]
+    }
+  ]
+}
