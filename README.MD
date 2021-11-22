@@ -19,7 +19,8 @@ This gives you a general understanding of how things work in Gradle and enables 
 9. [Centralizing Dependency Versions](09_Centralizing_Dependency_Versions)
 10. [Dependency Version Conflicts](10_Dependency_Version_Conflicts)
 11. [Capability Conflicts](11_Capability_Conflicts)
-12. ...
+12. [Publishing Libraries](12_Publishing_Libraries)
+13. ...
 
 ## Need Gradle support?
 
