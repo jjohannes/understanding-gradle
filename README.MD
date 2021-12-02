@@ -20,7 +20,8 @@ This gives you a general understanding of how things work in Gradle and enables 
 10. [Dependency Version Conflicts](10_Dependency_Version_Conflicts)
 11. [Capability Conflicts](11_Capability_Conflicts)
 12. [Publishing Libraries](12_Publishing_Libraries)
-13. ...
+13. [Aggregating Custom Artifacts](13_Aggregating_Custom_Artifacts)
+14. ...
 
 ## Need Gradle support?
 
