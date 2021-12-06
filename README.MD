@@ -6,7 +6,7 @@ The series introduces the concepts of the [Gradle Build Tool](https://github.com
 Rather than explaining each feature in detail, the series initially aims at explaining fundamental concepts and patterns.
 This gives you a general understanding of how things work in Gradle and enables you to structure your project in a readable and maintainable way.
 
-## Entries published so far
+## The Fundamentals (First 14 Entries)
 
 1. [The Settings File](01_The_Settings_File)
 2. [The Build Files](02_The_Build_Files)
@@ -21,7 +21,9 @@ This gives you a general understanding of how things work in Gradle and enables 
 11. [Capability Conflicts](11_Capability_Conflicts)
 12. [Publishing Libraries](12_Publishing_Libraries)
 13. [Aggregating Custom Artifacts](13_Aggregating_Custom_Artifacts)
-14. ...
+14. [Settings Plugins](14_Settings_Plugins)
+
+## To be continued...
 
 ## Need Gradle support?
 
