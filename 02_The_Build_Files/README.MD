@@ -26,8 +26,8 @@ To help you find the right places, here are some deep links into the Manual on t
 
 * [Applying plugins (Plugins DSL)](https://docs.gradle.org/current/userguide/plugins.html#sec:plugins_block)
 * [The `java` Extension (as one example of an Extension added by a plugin)](https://docs.gradle.org/current/userguide/java_plugin.html#sec:java-extension)
-* [Declarign Dependencies (other Subprojects)](https://docs.gradle.org/current/userguide/declaring_dependencies_between_subprojects.html)
-* [Declarign Dependencies (Components)](https://docs.gradle.org/current/userguide/declaring_dependencies.html)
+* [Declaring Dependencies (other Subprojects)](https://docs.gradle.org/current/userguide/declaring_dependencies_between_subprojects.html)
+* [Declaring Dependencies (Components)](https://docs.gradle.org/current/userguide/declaring_dependencies.html)
 
 ## Need Gradle support?
 
