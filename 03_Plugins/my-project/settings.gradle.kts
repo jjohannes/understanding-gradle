@@ -1,15 +1,11 @@
 pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-    }
+    repositories.gradlePluginPortal()
+    repositories.google()
     includeBuild("../my-build-logic")
 }
 
 dependencyResolutionManagement {
-    repositories {
-        mavenCentral()
-    }
+    repositories.mavenCentral()
     includeBuild("../my-other-project")
 }
 

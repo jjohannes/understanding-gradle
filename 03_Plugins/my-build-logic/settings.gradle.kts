@@ -1,7 +1,5 @@
 dependencyResolutionManagement {
-    repositories {
-        gradlePluginPortal()
-    }
+    repositories.gradlePluginPortal()
 }
 
 include("java-plugins")
