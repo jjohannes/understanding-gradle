@@ -23,6 +23,13 @@ This gives you a general understanding of how things work in Gradle and enables 
 13. [Aggregating Custom Artifacts](13_Aggregating_Custom_Artifacts)
 14. [Settings Plugins](14_Settings_Plugins)
 
+
+## Full Project Setup
+
+- [Full Java Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/main)
+- [Full Android Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/android)
+- [Full Java Module System Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/java_module_system)
+
 ## To be continued...
 
 ## Need Gradle support?
