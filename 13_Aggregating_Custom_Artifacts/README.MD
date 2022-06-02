@@ -26,7 +26,7 @@ To help you find the right places, here are some deep links into the Manual on t
 * [Declaring dependencies + What are Configurations?](https://docs.gradle.org/current/userguide/declaring_dependencies.html)
 * [Understanding Variant Selection](https://docs.gradle.org/current/userguide/variant_model.html)
 * [Variant Attributes](https://docs.gradle.org/current/userguide/variant_attributes.html)
-* [Sample: Aggregate Jacoco Code Coverage](https://docs.gradle.org/current/samples/sample_jvm_multi_project_with_code_coverage.html)
+* [Sample: Aggregate Jacoco Code Coverage](https://docs.gradle.org/current/samples/sample_jvm_multi_project_with_code_coverage_distribution.html)
 * [Configurations added by the Java Library plugin](https://docs.gradle.org/current/userguide/java_library_plugin.html#sec:java_library_configurations_graph)
 * [Variant-aware Sharing of Artifacts between Projects](https://docs.gradle.org/current/userguide/cross_project_publications.html#sec:variant-aware-sharing)
 * [Understanding Gradle Module Metadata](https://docs.gradle.org/current/userguide/publishing_gradle_module_metadata.html)
