@@ -24,13 +24,17 @@ This gives you a general understanding of how things work in Gradle and enables 
 14. [Settings Plugins](14_Settings_Plugins)
 
 
-## Full Project Setup
+## Full Project Setup (Entry 15)
 
 - [Full Java Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/main)
 - [Full Android Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/android)
 - [Full Java Module System Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/java_module_system)
 
-## To be continued...
+## JVM Development Basics (Entry 16 - ?)
+
+16. [Source Sets](16_Source_Sets)
+17. ...
+
 
 ## Need Gradle support?
 
