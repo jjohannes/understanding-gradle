@@ -1,0 +1,27 @@
+plugins {
+    id("my-java-base")
+    id("java-library")
+    id("maven-publish")
+}
+
+publishing {
+    publications.create("lib", MavenPublication).from(components["java"])
+
+    repositories.maven { url = "/tmp/test-repo" }
+}
+
+// The above more verbose if you need to customize published 'variants':
+//
+// def javaComponent = components["java"]
+// javaComponent.withVariantsFromConfiguration(configurations.runtimeElements) {
+//     // customize 'runtimeElements' variant here...
+// }
+// publishing {
+//     publications.create("lib", MavenPublication).from(javaComponent)
+//
+//     repositories.maven {
+//         url = "/tmp/test-repo"
+//         name = "myRepo"
+//         credentials(PasswordCredentials)
+//     }
+// }

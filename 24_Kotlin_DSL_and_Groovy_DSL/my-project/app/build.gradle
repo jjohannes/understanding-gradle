@@ -1,0 +1,11 @@
+plugins {
+    id 'my-java-application'
+}
+
+application {
+    mainClass = 'myproject.MyApplication'
+}
+
+dependencies {
+    implementation 'org.example.my-app:business-logic'
+}

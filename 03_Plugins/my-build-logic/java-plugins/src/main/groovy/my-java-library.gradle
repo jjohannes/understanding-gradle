@@ -1,0 +1,16 @@
+plugins {
+    id("java-library")
+    id("org.jetbrains.kotlin.jvm")
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+tasks.named("test") {
+    useJUnitPlatform()
+}
+
+kotlin {
+    // ...
+}

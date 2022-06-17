@@ -1,0 +1,22 @@
+plugins {
+    id("my-java-base")
+    id("application")
+}
+
+def sourcesPath = configurations.create("sourcesPath") {
+    canBeResolved = true
+    canBeConsumed = false
+    extendsFrom(configurations.implementation)
+    attributes {
+        attribute(Usage.USAGE_ATTRIBUTE, objects.named(Usage, "java-sources"))
+    }
+}
+
+def fullJavadoc = tasks.register("fullJavadoc", Javadoc) {
+    classpath = configurations.runtimeClasspath
+    source = sourcesPath.incoming.artifactView { lenient(true) }.files.asFileTree
+}
+
+tasks.named("build") {
+    dependsOn(fullJavadoc)
+}

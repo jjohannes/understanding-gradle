@@ -1,0 +1,26 @@
+plugins {
+    id("java")
+}
+
+group = "org.example.my-app"
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+// Setup for consistent resolution with the application runtime classpath:
+def applicationRuntimeClasspath = configurations.create("applicationRuntimeClasspath") {
+    canBeConsumed = false
+    canBeResolved = true
+    attributes {
+        attribute(Usage.USAGE_ATTRIBUTE, objects.named(Usage, Usage.JAVA_RUNTIME))
+    }
+    withDependencies {
+        add(project.dependencies.create(project(":app")))
+    }
+}
+configurations.all {
+    if (it != applicationRuntimeClasspath && it.canBeResolved) {
+        shouldResolveConsistentlyWith(applicationRuntimeClasspath)
+    }
+}

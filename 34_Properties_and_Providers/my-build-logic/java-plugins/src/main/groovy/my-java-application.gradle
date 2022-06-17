@@ -1,0 +1,30 @@
+import org.example.ApplicationReportTask
+
+plugins {
+    id("application")
+}
+
+tasks.named("assemble") // access existing task
+tasks.register("checkAll") // register new task
+tasks.withType(JavaCompile).configureEach {  } // configure all of a certain type
+
+layout.projectDirectory
+layout.buildDirectory
+
+providers.environmentVariable("CI").orElse("false").get().asBoolean()
+providers.gradleProperty("foo") // pass to build via -Pfoo=bar
+providers.systemProperty("file.encoding")
+
+version = providers.fileContents(layout.projectDirectory.file("version.txt"))
+    .asText.get()
+
+FileCollection fileCollection  = configurations.runtimeClasspath
+fileCollection.elements.map { it.first().asFile }
+
+
+def main = application.mainClass.map { "$it-report.txt" }
+
+tasks.register("applicationReport", ApplicationReportTask) {
+    classesDir.set(tasks.named("compileJava").flatMap { it.destinationDirectory })
+    reportFile.set(layout.buildDirectory.file(main))
+}
