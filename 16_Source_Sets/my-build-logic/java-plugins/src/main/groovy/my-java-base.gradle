@@ -1,0 +1,65 @@
+import org.gradle.api.plugins.jvm.internal.DefaultJvmPluginExtension
+import java.nio.file.Files
+
+plugins {
+    id("java")
+    id("groovy")
+}
+
+group = "org.example.my-app"
+version = "1.0"
+
+sourceSets.main {
+    // java.setSrcDirs(listOf(project.layout.projectDirectory.dir("sources")))
+    // resources.setSrcDirs(listOf(project.layout.projectDirectory.dir("resources")))
+}
+
+sourceSets.test {
+
+}
+
+def extraFeature = sourceSets.create("extraFeature")
+tasks.register(extraFeature.jarTaskName, Jar) {
+    from(extraFeature.output)
+    archiveClassifier.set("extra-feature")
+}
+
+def jvm = extensions.create("jvm", DefaultJvmPluginExtension)
+jvm.utilities.registerJvmLanguageSourceDirectory(sourceSets.main, "java17") {
+    compiledWithJava {
+        javaCompiler.set(javaToolchains.compilerFor {
+            languageVersion.set(JavaLanguageVersion.of(17))
+        })
+        classpath = sourceSets.main.compileClasspath
+        doLast {
+            def destRoot = destinationDirectory.get().asFile
+            def destVersion17 = File(destRoot, "META-INF/version/17")
+            destVersion17.mkdirs()
+            destRoot.listFiles()?.each {
+                if (it.name != "META-INF") {
+                    Files.move(it.toPath(), File(destVersion17, it.name).toPath())
+                }
+            }
+        }
+    }
+}
+
+tasks.jar {
+    manifest {
+        attributes("Multi-Release": true)
+    }
+}
+
+dependencies.constraints {
+    implementation("org.apache.commons:commons-lang3:3.9")
+    add("extraFeatureImplementation", "org.apache.commons:commons-lang3:3.9")
+}
+
+dependencies {
+    testImplementation("junit:junit:4.13.2")
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(11))
+}
+

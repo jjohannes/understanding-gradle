@@ -1,0 +1,49 @@
+plugins {
+    id("java")
+}
+
+group = "org.example.my-app"
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(11))
+}
+
+configurations {
+    compileClasspath {
+        useLatestVersionsAndLock(it)
+    }
+    runtimeClasspath {
+        useLatestVersionsAndLock(it)
+    }
+    testCompileClasspath {
+        useLatestVersionsAndLock(it)
+    }
+    testRuntimeClasspath {
+        useLatestVersionsAndLock(it)
+    }
+}
+
+
+void useLatestVersionsAndLock(Configuration conf) {
+    conf.resolutionStrategy {
+        eachDependency {
+            if (requested.version.isEmpty()) { useVersion("latest.release") }
+        }
+        activateDependencyLocking()
+    }
+}
+
+dependencies.components.all {
+    def lcVersion = id.version.toLowerCase()
+    if (lcVersion.contains("alpha")
+        || lcVersion.contains("-b")
+        || lcVersion.contains("beta")
+        || lcVersion.contains("cr")
+        || lcVersion.contains("m")
+        || lcVersion.contains("rc")
+        || lcVersion.startsWith("200")) {
+
+        // Tell Gradle to not treat pre-releases as 'release'
+        status = "integration"
+    }
+}
