@@ -19,7 +19,7 @@ dependencies {
 }
 
 dependencies.constraints {
-    implementation("org.apache.commons:commons-lang3:3.6") // Use !! to make this a strict version
+    implementation("org.apache.commons:commons-lang3:3.6!!") // Remove !! (strict version) and this will be upgraded
     implementation("org.apache.commons:commons-text:1.5")
 }
 
