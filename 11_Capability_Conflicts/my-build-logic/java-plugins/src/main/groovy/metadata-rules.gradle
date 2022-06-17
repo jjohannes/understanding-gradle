@@ -1,0 +1,6 @@
+import myproject.metadatarules.Slf4JImplRule
+
+dependencies.components {
+    withModule("org.slf4j:slf4j-simple", Slf4JImplRule)
+    withModule("ch.qos.logback:logback-classic", Slf4JImplRule)
+}

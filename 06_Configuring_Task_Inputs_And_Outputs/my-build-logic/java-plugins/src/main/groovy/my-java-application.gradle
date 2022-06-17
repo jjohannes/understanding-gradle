@@ -1,0 +1,21 @@
+plugins {
+    id("my-java-base")
+}
+
+def packageApp = tasks.register("packageApp", Zip) {
+    from(layout.projectDirectory.file("run.sh"))
+    from(tasks.named("jar")) {
+        into("libs")
+    }
+    from(configurations.runtimeClasspath) {
+        into("libs")
+    }
+
+    destinationDirectory.set(layout.buildDirectory.dir("dist"))
+    archiveFileName.set("myApplication.zip")
+}
+
+tasks.named("build") {
+    dependsOn(packageApp)
+}
+

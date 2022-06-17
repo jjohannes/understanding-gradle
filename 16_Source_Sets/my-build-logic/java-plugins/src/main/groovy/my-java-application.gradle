@@ -1,0 +1,13 @@
+plugins {
+    id("my-java-base")
+    id("application")
+}
+
+tasks.register("runJava17", JavaExec) {
+    classpath = configurations.runtimeClasspath + files(tasks.jar)
+    javaLauncher.set(javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(17)
+    })
+    mainClass = application.mainClass
+    group = "application"
+}

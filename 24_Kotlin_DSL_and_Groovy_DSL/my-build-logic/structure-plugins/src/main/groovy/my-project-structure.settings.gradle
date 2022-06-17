@@ -1,0 +1,20 @@
+// Locations of Gradle plugins
+pluginManagement {
+    repositories.gradlePluginPortal()
+}
+
+// Location of other components
+dependencyResolutionManagement {
+    repositories.mavenCentral()
+    rootDir.parentFile.listFiles().findAll {
+        new File(it, 'settings.gradle.kts').exists() || new File(it, 'settings.gradle').exists()
+    }.each {
+        includeBuild it.path
+    }
+}
+
+rootDir.listFiles().findAll {
+    new File(it, 'build.gradle.kts').exists() || new File(it, 'build.gradle').exists()
+}.each {
+    include it.name
+}
