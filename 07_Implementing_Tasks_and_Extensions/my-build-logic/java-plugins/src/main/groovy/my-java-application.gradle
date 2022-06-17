@@ -1,0 +1,31 @@
+import myproject.tasks.GenerateStartScript
+import myproject.tasks.MyAppExtension
+
+plugins {
+    id("my-java-base")
+}
+
+def myApp = extensions.create("myApp", MyAppExtension)
+
+def generateStartScript = tasks.register("generateStartScript", GenerateStartScript) {
+    mainClass.convention(myApp.mainClass)
+    scriptFile.set(layout.buildDirectory.file("run.sh"))
+}
+
+def packageApp = tasks.register("packageApp", Zip) {
+    from(generateStartScript)
+    from(tasks.jar) {
+        into("libs")
+    }
+    from(configurations.runtimeClasspath) {
+        into("libs")
+    }
+
+    destinationDirectory.set(layout.buildDirectory.dir("dist"))
+    archiveFileName.set("myApplication.zip")
+}
+
+tasks.named("build") {
+    dependsOn(packageApp)
+}
+
