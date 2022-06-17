@@ -6,6 +6,9 @@ The series introduces the concepts of the [Gradle Build Tool](https://github.com
 Rather than explaining each feature in detail, the series initially aims at explaining fundamental concepts and patterns.
 This gives you a general understanding of how things work in Gradle and enables you to structure your project in a readable and maintainable way.
 
+[Switch all examples to Kotlin DSL](https://github.com/jjohannes/understanding-gradle/tree/main)  
+[Switch all examples to Groovy DSL](https://github.com/jjohannes/understanding-gradle/tree/groovy-dsl)
+
 ## The Fundamentals (First 14 Entries)
 
 1. [The Settings File](01_The_Settings_File)
