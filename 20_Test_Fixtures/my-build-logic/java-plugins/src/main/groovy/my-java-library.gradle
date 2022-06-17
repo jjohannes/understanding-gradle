@@ -1,0 +1,10 @@
+plugins {
+    id("my-java-base")
+    id("java-library")
+    id("java-test-fixtures")
+}
+
+def test = sourceSets.test
+java.registerFeature(test.name) {
+    usingSourceSet(test)
+}

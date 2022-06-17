@@ -1,0 +1,28 @@
+pluginManagement {
+    includeBuild("../my-build-logic")
+}
+dependencyResolutionManagement {
+    repositories.mavenCentral()
+}
+
+rootDir.listFiles().findAll { new File(it, "build.gradle").exists() }.each {
+    include(it.name)
+}
+
+def runsOnCI = providers.environmentVariable("CI").getOrElse("false").toBoolean()
+buildCache {
+    remote(HttpBuildCache) {
+        enabled = false // because this example cache does not actually exist :)
+        url = "https://onepiece.software/cache/"
+        credentials {
+            username = "jendrik"
+            password = "..."
+        }
+        push = runsOnCI
+    }
+    local {
+        // isEnabled = false
+        // directory = File(rootDir, "build-cache")
+        // removeUnusedEntriesAfterDays = 30
+    }
+}
