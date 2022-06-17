@@ -1,0 +1,45 @@
+plugins {
+    id("my-java-base")
+    id("application")
+    id("test-report-aggregation")
+    id("jacoco-report-aggregation")
+}
+
+// Integrate INTEGRATION_TEST results into the aggregated UNIT_TEST coverage results
+tasks.named("testCodeCoverageReport") {
+    executionData.from(
+        configurations.aggregateCodeCoverageReportResults
+                .incoming.artifactView {
+                    lenient(true)
+                    withVariantReselection()
+                    attributes {
+                        attribute(Category.CATEGORY_ATTRIBUTE, objects.named(Category, Category.VERIFICATION))
+                        attribute(TestSuiteName.TEST_SUITE_NAME_ATTRIBUTE, objects.named(TestSuiteName, "integrationTest"))
+                        attribute(VerificationType.VERIFICATION_TYPE_ATTRIBUTE, objects.named(VerificationType, VerificationType.JACOCO_RESULTS))
+                        attribute(ArtifactTypeDefinition.ARTIFACT_TYPE_ATTRIBUTE, ArtifactTypeDefinition.BINARY_DATA_TYPE)
+                    }
+
+                }.files
+    )
+}
+
+// Integrate INTEGRATION_TEST results into the aggregated UNIT_TEST test results
+tasks.named("testAggregateTestReport") {
+    testResults.from(
+        configurations.aggregateTestReportResults
+            .incoming.artifactView {
+                lenient(true)
+                withVariantReselection()
+                attributes {
+                    attribute(Category.CATEGORY_ATTRIBUTE, objects.named(Category, Category.VERIFICATION))
+                    attribute(TestSuiteName.TEST_SUITE_NAME_ATTRIBUTE, objects.named(TestSuiteName, "integrationTest"))
+                    attribute(VerificationType.VERIFICATION_TYPE_ATTRIBUTE, objects.named(VerificationType, VerificationType.TEST_RESULTS))
+                }
+            }.files
+    )
+}
+
+tasks.named("check") {
+    dependsOn(tasks.named("testAggregateTestReport"))
+    dependsOn(tasks.named("testCodeCoverageReport"))
+}

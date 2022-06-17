@@ -1,0 +1,17 @@
+def globalBuildGroup = "My global build"
+def ciBuildGroup = "My CI build"
+
+tasks.named("tasks") {
+    displayGroup = globalBuildGroup
+}
+
+tasks.register("qualityCheckAll") {
+    group = globalBuildGroup
+    dependsOn(subprojects.collect { ":${it.name}:qualityCheck" })
+}
+
+tasks.register("checkAll") {
+    group = ciBuildGroup
+    dependsOn(subprojects.collect { ":${it.name}:check" })
+    dependsOn(gradle.includedBuilds.collect { it.task(":checkAll") })
+}
