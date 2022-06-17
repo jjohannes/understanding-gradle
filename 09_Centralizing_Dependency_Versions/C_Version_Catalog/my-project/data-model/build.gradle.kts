@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-lang3")
+    implementation(libs.commons.lang3)
 }
