@@ -1,0 +1,41 @@
+configurations.create("implementation")
+configurations.create("api")
+configurations.create("runtimeOnly")
+def compileClasspath = configurations.create("compileClasspath") {
+    extendsFrom(configurations.implementation, configurations.api)
+}
+
+dependencies {
+    api("javax.activation:activation:1.1.1")
+    implementation("commons-io:commons-io:2.6")
+}
+
+def compileJava = tasks.register("compileJava", JavaCompile) {
+    destinationDirectory.set(layout.buildDirectory.dir("classes"))
+    source(layout.projectDirectory.dir("src"))
+    sourceCompatibility = "11"
+    targetCompatibility = "11"
+    classpath = files(compileClasspath)
+    doLast {
+        classpath.files.forEach { println(it.path) }
+    }
+}
+
+configurations.create("apiElements") {
+    extendsFrom(configurations.api)
+    outgoing {
+        artifact(compileJava.flatMap { it.destinationDirectory })
+    }
+    attributes {
+        attribute(Usage.USAGE_ATTRIBUTE, objects.named(Usage, Usage.JAVA_API))
+    }
+}
+configurations.create("runtimeElements") {
+    extendsFrom(configurations.implementation, configurations.runtimeOnly, configurations.api)
+    outgoing {
+        artifact(compileJava.flatMap { it.destinationDirectory })
+    }
+    attributes {
+        attribute(Usage.USAGE_ATTRIBUTE, objects.named(Usage, Usage.JAVA_RUNTIME))
+    }
+}

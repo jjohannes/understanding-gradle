@@ -1,0 +1,41 @@
+repositories.mavenCentral()
+
+configurations.create("implementation")
+configurations.create("runtimeOnly")
+configurations.create("compileClasspath") {
+    extendsFrom(configurations.implementation)
+}
+configurations.create("runtimeClasspath") {
+    extendsFrom(configurations.implementation, configurations.runtimeOnly)
+}
+
+// Other classpath configurations we should have:
+// - testCompileClasspath
+// - testRuntimeClasspath
+
+dependencies {
+    implementation("org.slf4j:slf4j-api:2.0.3")
+    implementation("junit:junit:4.13.2") // <-- would be testImplementation in a real project
+    runtimeOnly("org.slf4j:slf4j-simple:2.0.3")
+}
+
+def compileJava = tasks.register("compileJava", JavaCompile) {
+    destinationDirectory.set(layout.buildDirectory.dir("classes"))
+    source(layout.projectDirectory.dir("src"))
+    sourceCompatibility = "11"
+    targetCompatibility = "11"
+    classpath = files(configurations.compileClasspath)
+}
+
+tasks.register("run", JavaExec) {
+    mainClass.set("mypackage.App")
+    classpath = files(compileJava, configurations.runtimeClasspath)
+}
+
+tasks.register("test", Test) {
+    testClassesDirs = files(compileJava)
+    classpath = files(compileJava, configurations.runtimeClasspath)
+    binaryResultsDirectory.set(layout.buildDirectory.dir("test-results"))
+    reports.junitXml.required.set(false)
+    reports.html.required.set(false)
+}
