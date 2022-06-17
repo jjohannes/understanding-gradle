@@ -1,0 +1,39 @@
+configurations.create("implementation")
+configurations.create("runtimeOnly")
+def compileClasspath = configurations.create("compileClasspath") {
+    extendsFrom(configurations.implementation)
+    attributes {
+        attribute(Usage.USAGE_ATTRIBUTE, objects.named(Usage, Usage.JAVA_API))
+    }
+}
+def runtimeClasspath = configurations.create("runtimeClasspath") {
+    extendsFrom(configurations.implementation, configurations.runtimeOnly)
+    attributes {
+        attribute(Usage.USAGE_ATTRIBUTE, objects.named(Usage, Usage.JAVA_RUNTIME))
+    }
+}
+
+dependencies {
+    implementation(project(":module"))
+    implementation("org.slf4j:slf4j-api:2.0.3")
+    runtimeOnly("org.slf4j:slf4j-simple:2.0.3")
+}
+
+def compileJava = tasks.register("compileJava", JavaCompile) {
+    destinationDirectory.set(layout.buildDirectory.dir("classes"))
+    source(layout.projectDirectory.dir("src"))
+    sourceCompatibility = "11"
+    targetCompatibility = "11"
+    classpath = files(compileClasspath)
+    doLast {
+        classpath.files.forEach { println(it.path) }
+    }
+}
+
+tasks.register("run", JavaExec) {
+    mainClass.set("mypackage.App")
+    classpath = files(compileJava.flatMap { it.destinationDirectory }, runtimeClasspath)
+    doLast {
+        classpath.files.forEach { println(it.path) }
+    }
+}

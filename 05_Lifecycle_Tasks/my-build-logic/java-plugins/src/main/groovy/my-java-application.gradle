@@ -1,0 +1,10 @@
+plugins {
+    id("my-java-base")
+    id("application")
+}
+
+def myBuildGroup = "my project build"
+
+tasks.named("run") {
+    group = myBuildGroup
+}
