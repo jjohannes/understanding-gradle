@@ -1,0 +1,121 @@
+name: Build Plugin
+on: [ push, pull_request ]
+jobs:
+  gradle-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git clone
+        uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2.5.0
+        with:
+          distribution: 'zulu'
+          java-version: 11
+      - name: 01
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 01_The_Settings_File/my-project
+          arguments: :build
+      - name: 02
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 02_The_Build_Files/my-project
+          arguments: :build
+      - name: 03
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 03_Plugins/my-project
+          arguments: :build
+      - name: 04
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 04_Tasks/my-project
+          arguments: :build
+      - name: 05
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 05_Lifecycle_Tasks/my-project
+          arguments: :build
+      - name: 06
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 06_Configuring_Task_Inputs_And_Outputs/my-project
+          arguments: :build
+      - name: 07
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 07_Implementing_Tasks_and_Extensions/my-project
+          arguments: :build
+      - name: 08
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 08_Declaring_Dependencis/my-project
+          arguments: :build
+      - name: 09A
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 09_Centralizing_Dependency_Versions/A_Dependency_Constrains_in_Convention_Plugin/my-project
+          arguments: :build
+      - name: 09B
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 09_Centralizing_Dependency_Versions/B_Platform_Project/my-project
+          arguments: :build
+      - name: 09C
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 09_Centralizing_Dependency_Versions/C_Version_Catalog/my-project
+          arguments: :build
+      - name: 09D
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 09_Centralizing_Dependency_Versions/D_Dependency_Locking/my-project
+          arguments: :build
+      - name: 10
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 10_Dependency_Version_Conflicts/my-project
+          arguments: :build
+      - name: 11
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 11_Capability_Conflicts/my-project
+          arguments: :build
+      - name: 12
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 12_Publishing_Libraries/my-project
+          arguments: :build
+      - name: 13
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 13_Aggregating_Custom_Artifacts/my-project
+          arguments: :build
+      - name: 14
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 14_Settings_Plugins/my-project
+          arguments: :build
+      - name: 16
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 16_Source_Sets/my-project
+          arguments: :build
