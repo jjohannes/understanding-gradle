@@ -22,13 +22,13 @@ abstract public class MyProjectStructureSettingsPlugin implements Plugin<Setting
         // Location of other components
         dependencyResolutionManagement.getRepositories().mavenCentral();
         for (File folder: rootDir.getParentFile().listFiles()) {
-            if (new File(folder, "settings.gradle.kts").exists()) {
+            if (new File(folder, "settings.gradle").exists()) {
                 settings.includeBuild(folder.getPath());
             }
         }
 
         for (File folder: rootDir.listFiles()) {
-            if (new File(folder, "build.gradle.kts").exists()) {
+            if (new File(folder, "build.gradle").exists()) {
                 settings.include(folder.getName());
             }
         }

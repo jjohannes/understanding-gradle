@@ -1,0 +1,11 @@
+plugins {
+    id("my-java-base")
+    id("application")
+    id("org.owasp.dependencycheck")
+}
+
+dependencyCheck {
+    scanConfigurations = [configurations.runtimeClasspath.name]
+    autoUpdate = false
+    // ...
+}

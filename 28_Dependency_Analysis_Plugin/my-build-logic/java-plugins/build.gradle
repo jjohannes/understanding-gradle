@@ -1,0 +1,7 @@
+plugins {
+    id("groovy-gradle-plugin")
+}
+
+dependencies {
+    implementation("com.autonomousapps:dependency-analysis-gradle-plugin:3.5.1")
+}

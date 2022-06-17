@@ -1,0 +1,24 @@
+// Locations of Gradle plugins
+pluginManagement {
+    repositories.gradlePluginPortal()
+    repositories.google()
+}
+
+// Location of other components
+dependencyResolutionManagement {
+    repositories.mavenCentral()
+    repositories.google()
+    rootDir.parentFile.listFiles()?.findAll {
+        new File(it, "settings.gradle").exists()
+    }?.each {
+        if (it.path != rootDir.path) {
+            includeBuild(it.path)
+        }
+    }
+}
+
+rootDir.listFiles()?.findAll {
+    new File(it, "build.gradle").exists()
+}?.each {
+    include(it.name)
+}

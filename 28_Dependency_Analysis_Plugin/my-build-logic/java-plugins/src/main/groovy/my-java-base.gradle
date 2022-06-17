@@ -1,0 +1,51 @@
+import com.autonomousapps.AbstractPostProcessingTask
+import com.autonomousapps.DependencyAnalysisSubExtension
+import com.autonomousapps.model.Advice
+import com.autonomousapps.model.ProjectCoordinates
+
+plugins {
+    id("java")
+}
+
+group = "org.example.my-app"
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+def checkDependencyScopes = tasks.register("checkDependencyScopes", AbstractPostProcessingTask) {
+    group = LifecycleBasePlugin.VERIFICATION_GROUP
+    doLast {
+        def advices = projectAdvice().dependencyAdvice
+        if (!advices.isEmpty()) {
+            def toAdd = advices.findAll { it.toConfiguration != null &&
+                    it.toConfiguration != "runtimeOnly" }.collect {
+                declaration(it, it.toConfiguration) }.sort()
+            def toRemove = advices.findAll { it.fromConfiguration != null }.collect {
+                declaration(it, it.fromConfiguration) }.sort()
+
+            throw new RuntimeException("""
+                    ${projectAdvice().projectPath.substring(1)}/build.gradle
+                    
+                    Please add the following dependency declarations: 
+                        ${toAdd.join("\n                        ")}
+                    
+                    Please remove the following dependency declarations: 
+                        ${toRemove.join("\n                        ")}
+                """.stripIndent())
+        }
+    }
+}
+
+static declaration(Advice advice, String conf) {
+    if (advice.coordinates instanceof ProjectCoordinates) return "${conf}(project(\"${advice.coordinates.identifier}\"))"
+    return "${conf}(\"${advice.coordinates.identifier}\")"
+}
+
+extensions.findByType(DependencyAnalysisSubExtension)?.registerPostProcessingTask(
+        checkDependencyScopes)
+
+// Add checkDependencyScopes to 'check' lifecycle
+tasks.named("check") {
+    dependsOn(checkDependencyScopes)
+}
