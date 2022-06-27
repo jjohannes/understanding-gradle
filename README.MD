@@ -36,7 +36,8 @@ This gives you a general understanding of how things work in Gradle and enables 
 ## JVM Development Basics (Entry 16 - ?)
 
 16. [Source Sets](16_Source_Sets)
-17. ...
+17. [Feature Variants](17_Feature_Variants)
+18. ...
 
 
 ## Need Gradle support?
