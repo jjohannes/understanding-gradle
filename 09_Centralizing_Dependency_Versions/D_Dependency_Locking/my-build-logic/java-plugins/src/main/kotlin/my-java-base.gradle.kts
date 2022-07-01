@@ -34,10 +34,17 @@ fun Configuration.useLatestVersionsAndLock() {
 }
 
 dependencies.components.all {
-    val version = this.id.version
-    if (version.contains("beta") || version.contains("alpha")) {
-        // Tell Gradle to not treat versions that contain 'beta' or 'alpha' as released
-        this.status = "milestone"
+    val lcVersion = id.version.toLowerCase()
+    if (lcVersion.contains("alpha")
+        || lcVersion.contains("-b")
+        || lcVersion.contains("beta")
+        || lcVersion.contains("cr")
+        || lcVersion.contains("m")
+        || lcVersion.contains("rc")
+        || lcVersion.startsWith("200")) {
+
+        // Tell Gradle to not treat pre-releases as 'release'
+        status = "integration"
     }
 }
 
