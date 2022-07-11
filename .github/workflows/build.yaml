@@ -119,3 +119,15 @@ jobs:
           gradle-version: 7.2
           build-root-directory: 16_Source_Sets/my-project
           arguments: :build
+      - name: 17
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 17_Feature_Variants/my-project
+          arguments: :build
+      - name: 18
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 18_Configuring_Testing/my-project
+          arguments: :build

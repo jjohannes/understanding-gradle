@@ -37,7 +37,8 @@ This gives you a general understanding of how things work in Gradle and enables 
 
 16. [Source Sets](16_Source_Sets)
 17. [Feature Variants](17_Feature_Variants)
-18. ...
+18. [Configuring Testing](18_Configuring_Testing)
+19. ...
 
 
 ## Need Gradle support?
