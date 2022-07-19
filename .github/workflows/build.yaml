@@ -131,3 +131,9 @@ jobs:
           gradle-version: 7.2
           build-root-directory: 18_Configuring_Testing/my-project
           arguments: :build
+      - name: 19
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.2
+          build-root-directory: 19_The_Test_Task/my-project
+          arguments: :build
