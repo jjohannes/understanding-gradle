@@ -4,7 +4,7 @@
 
 [<img src="https://onepiecesoftware.github.io/img/videos/19.png" width="640">](https://www.youtube.com/watch?v=YJjNQJSaFww&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
-Where to place test code for different types of tests and how to select a test framework?
+How does the Test Task execute tests (in parallel) and why are Worker Processes important for that?
 
 ## Explore this sample
 
