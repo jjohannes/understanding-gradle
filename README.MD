@@ -41,7 +41,8 @@ This gives you a general understanding of how things work in Gradle and enables 
 19. [The Test Task](19_The_Test_Task)
 20. [Test Fixtures](20_Test_Fixtures)
 21. [Test and Code Coverage Reporting](21_Test_and_Code_Coverage_Reporting)
-22. ...
+22. [The JavaCompile Task](22_The_JavaCompile_Task)
+23. ...
 
 
 ## Need Gradle support?

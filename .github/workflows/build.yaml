@@ -149,3 +149,9 @@ jobs:
           gradle-version: 7.5.1
           build-root-directory: 21_Test_and_Code_Coverage_Reporting/my-project
           arguments: :build
+      - name: 22
+        uses: gradle/gradle-build-action@v2.2.0
+        with:
+          gradle-version: 7.5.1
+          build-root-directory: 22_The_JavaCompile_Task/my-project
+          arguments: :build
