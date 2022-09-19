@@ -33,7 +33,7 @@ This gives you a general understanding of how things work in Gradle and enables 
 - [Full Android Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/android)
 - [Full Java Module System Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/java_module_system)
 
-## JVM Development Basics (Entry 16 - ?)
+## JVM Development Basics (Entry 16 - 22)
 
 16. [Source Sets](16_Source_Sets)
 17. [Feature Variants](17_Feature_Variants)
@@ -42,7 +42,11 @@ This gives you a general understanding of how things work in Gradle and enables 
 20. [Test Fixtures](20_Test_Fixtures)
 21. [Test and Code Coverage Reporting](21_Test_and_Code_Coverage_Reporting)
 22. [The JavaCompile Task](22_The_JavaCompile_Task)
-23. ...
+
+## General Gradle Topics (Entry 23 - ?)
+
+23. [Caching](23_Caching)
+24. ...
 
 
 ## Need Gradle support?
