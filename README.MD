@@ -47,7 +47,8 @@ This gives you a general understanding of how things work in Gradle and enables 
 
 23. [Caching](23_Caching)
 24. [Kotlin DSL and Groovy DSL](24_Kotlin_DSL_and_Groovy_DSL)
-25. ...
+25. [Using Java to configure builds](25_Using_Java_to_configure_builds)
+26. ...
 
 
 ## Need Gradle support?
