@@ -118,7 +118,19 @@ jobs:
         with:
           gradle-version: 7.5.1
           build-root-directory: 16_Source_Sets/my-project
-          arguments: build --warning-mode=fail -Dorg.gradle.kotlin.dsl.precompiled.accessors.strict=true ':my-android-project:app-android:build' ':my-kotlin-multi-platform-project:utils-kotlin:build'
+          arguments: build --warning-mode=fail -Dorg.gradle.kotlin.dsl.precompiled.accessors.strict=true
+      - name: 16-android
+        uses: gradle/gradle-build-action@v2.3.2
+        with:
+          gradle-version: 7.5.1
+          build-root-directory: 16_Source_Sets/my-android-project
+          arguments: build --warning-mode=fail -Dorg.gradle.kotlin.dsl.precompiled.accessors.strict=true
+      - name: 16-kotlin-multi-platform
+        uses: gradle/gradle-build-action@v2.3.2
+        with:
+          gradle-version: 7.5.1
+          build-root-directory: 16_Source_Sets/my-kotlin-multi-platform-project
+          arguments: build --warning-mode=all -Dorg.gradle.kotlin.dsl.precompiled.accessors.strict=true
       - name: 17
         uses: gradle/gradle-build-action@v2.3.2
         with:
