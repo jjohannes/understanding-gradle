@@ -8,6 +8,7 @@ android {
         minSdk = 26
         targetSdk = 31
     }
+    namespace = "myproject.android"
 
     sourceSets.getByName("main") {
         // get and configure an 'AndroidSourceSet'

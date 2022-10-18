@@ -118,7 +118,7 @@ jobs:
         with:
           gradle-version: 7.5.1
           build-root-directory: 16_Source_Sets/my-project
-          arguments: build
+          arguments: build ':my-android-project:app-android:build' ':my-kotlin-multi-platform-project:utils-kotlin:build'
       - name: 17
         uses: gradle/gradle-build-action@v2.2.0
         with:

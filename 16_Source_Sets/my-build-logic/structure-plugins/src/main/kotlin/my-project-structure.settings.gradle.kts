@@ -7,6 +7,7 @@ pluginManagement {
 // Location of other components
 dependencyResolutionManagement {
     repositories.mavenCentral()
+    repositories.google()
     rootDir.parentFile.listFiles()?.filter {
         File(it, "settings.gradle.kts").exists()
     }?.forEach {
