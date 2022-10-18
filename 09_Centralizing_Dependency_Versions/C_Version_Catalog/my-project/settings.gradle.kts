@@ -14,5 +14,3 @@ rootProject.name = "my-project"
 include("app")
 include("business-logic")
 include("data-model")
-
-enableFeaturePreview("VERSION_CATALOGS")
