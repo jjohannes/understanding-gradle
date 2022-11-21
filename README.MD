@@ -43,13 +43,15 @@ This gives you a general understanding of how things work in Gradle and enables 
 21. [Test and Code Coverage Reporting](21_Test_and_Code_Coverage_Reporting)
 22. [The JavaCompile Task](22_The_JavaCompile_Task)
 
-## General Gradle Topics (Entry 23 - ?)
+## General Gradle Topics (Entry 23 - 25)
 
 23. [Caching](23_Caching)
 24. [Kotlin DSL and Groovy DSL](24_Kotlin_DSL_and_Groovy_DSL)
 25. [Using Java to configure builds](25_Using_Java_to_configure_builds)
-26. ...
 
+## Java Modularity (Entry 26 - ??)
+
+26. [The Classpath](26_The_Classpath)
 
 ## Need Gradle support?
 
