@@ -52,6 +52,7 @@ This gives you a general understanding of how things work in Gradle and enables 
 ## Java Modularity (Entry 26 - ??)
 
 26. [The Classpath](26_The_Classpath)
+27. [Multiple Compile Classpaths](27_Multiple_Compile_Classpaths)
 
 ## Need Gradle support?
 

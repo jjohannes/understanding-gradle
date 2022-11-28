@@ -191,3 +191,9 @@ jobs:
           gradle-version: 7.5.1
           build-root-directory: 26_The_Classpath/my-project
           arguments: run test --warning-mode=fail -Dorg.gradle.kotlin.dsl.precompiled.accessors.strict=true
+      - name: 27
+        uses: gradle/gradle-build-action@v2.3.2
+        with:
+          gradle-version: 7.5.1
+          build-root-directory: 27_Multiple_Compile_Classpaths/my-project
+          arguments: run --warning-mode=fail -Dorg.gradle.kotlin.dsl.precompiled.accessors.strict=true
