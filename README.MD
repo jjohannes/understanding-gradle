@@ -54,6 +54,7 @@ This gives you a general understanding of how things work in Gradle and enables 
 26. [The Classpath](26_The_Classpath)
 27. [Multiple Compile Classpaths](27_Multiple_Compile_Classpaths)
 28. [Clean Compile Classpaths with the Dependency Analysis Plugin](28_Dependency_Analysis_Plugin)
+29. [Detect and Resolve Collisions on a Classpath](29_Classpath_Collisions)
 
 ## Need Gradle support?
 
