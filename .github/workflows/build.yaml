@@ -215,3 +215,9 @@ jobs:
           gradle-version: 7.6
           build-root-directory: 30_Security_Vulnerabilities/my-project
           arguments: run --warning-mode=fail -Dorg.gradle.kotlin.dsl.precompiled.accessors.strict=true
+      - name: 31
+        uses: gradle/gradle-build-action@v2.3.2
+        with:
+          gradle-version: 7.6
+          build-root-directory: 31_The_Module_Path/my-project
+          arguments: run --warning-mode=fail -Dorg.gradle.kotlin.dsl.precompiled.accessors.strict=true

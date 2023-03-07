@@ -56,6 +56,7 @@ This gives you a general understanding of how things work in Gradle and enables 
 28. [Clean Compile Classpaths with the Dependency Analysis Plugin](28_Dependency_Analysis_Plugin)
 29. [Detect and Resolve Collisions on a Classpath](29_Classpath_Collisions)
 30. [Discover Security Vulnerabilities](30_Security_Vulnerabilities)
+31. [The Module Path](31_The_Module_Path)
 
 ## Need Gradle support?
 
