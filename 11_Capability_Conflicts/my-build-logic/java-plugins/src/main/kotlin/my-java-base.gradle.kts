@@ -7,7 +7,7 @@ group = "org.example.my-app"
 version = "0.1"
 
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(11))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }
 
 tasks.test {

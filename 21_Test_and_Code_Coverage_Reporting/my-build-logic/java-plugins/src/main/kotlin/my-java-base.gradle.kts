@@ -7,10 +7,11 @@ group = "org.example.my-app"
 version = "1.0"
 
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(11))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }
 
 testing.suites.register<JvmTestSuite>("integrationTest") {
+    testType.set(TestSuiteType.INTEGRATION_TEST)
     configurations[sources.implementationConfigurationName].extendsFrom(
         configurations.implementation.get()
     )

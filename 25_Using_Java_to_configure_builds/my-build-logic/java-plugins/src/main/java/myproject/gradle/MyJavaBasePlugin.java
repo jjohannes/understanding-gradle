@@ -33,8 +33,8 @@ abstract public class MyJavaBasePlugin implements Plugin<Project> {
         SourceSetContainer sourceSets = extensions.getByType(SourceSetContainer.class);
         TestingExtension testing = extensions.getByType(TestingExtension.class);
 
-        // java.toolchain.languageVersion.set(JavaLanguageVersion.of(11))
-        java.getToolchain().getLanguageVersion().set(JavaLanguageVersion.of(11));
+        // java.toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+        java.getToolchain().getLanguageVersion().set(JavaLanguageVersion.of(17));
 
         project.setGroup("org.example.my-app");
         project.setVersion("1.0");

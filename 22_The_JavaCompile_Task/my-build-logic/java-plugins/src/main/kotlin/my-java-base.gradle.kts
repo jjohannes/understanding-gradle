@@ -6,7 +6,7 @@ group = "org.example.my-app"
 version = "1.0"
 
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(11))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }
 
 tasks.withType<JavaCompile>().configureEach {
