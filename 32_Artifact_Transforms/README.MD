@@ -1,4 +1,4 @@
-# Understanding Gradle #32 – Artifact Transforms (Java Modularity Part 6)
+# Understanding Gradle #32 – Artifact Transforms (Java Modularity Part 7)
 
 **👇 click thumbnail to watch video**
 
