@@ -5,9 +5,10 @@ plugins {
     id("jacoco-report-aggregation")
 }
 
+// Integrate INTEGRATION_TEST results into the aggregated UNIT_TEST coverage results
 tasks.testCodeCoverageReport {
     executionData.from(
-        configurations["aggregateCodeCoverageReportResults"]
+        configurations.aggregateCodeCoverageReportResults.get()
                 .incoming.artifactView {
                     lenient(true)
                     withVariantReselection()
@@ -18,6 +19,22 @@ tasks.testCodeCoverageReport {
                         attribute(ArtifactTypeDefinition.ARTIFACT_TYPE_ATTRIBUTE, ArtifactTypeDefinition.BINARY_DATA_TYPE)
                     }
                 }.files
+    )
+}
+
+// Integrate INTEGRATION_TEST results into the aggregated UNIT_TEST test results
+tasks.testAggregateTestReport {
+    testResults.from(
+        configurations.aggregateTestReportResults.get()
+            .incoming.artifactView {
+                lenient(true)
+                withVariantReselection()
+                attributes {
+                    attribute(Category.CATEGORY_ATTRIBUTE, objects.named(Category.VERIFICATION))
+                    attribute(TestSuiteType.TEST_SUITE_TYPE_ATTRIBUTE, objects.named(TestSuiteType.INTEGRATION_TEST))
+                    attribute(VerificationType.VERIFICATION_TYPE_ATTRIBUTE, objects.named(VerificationType.TEST_RESULTS))
+                }
+            }.files
     )
 }
 

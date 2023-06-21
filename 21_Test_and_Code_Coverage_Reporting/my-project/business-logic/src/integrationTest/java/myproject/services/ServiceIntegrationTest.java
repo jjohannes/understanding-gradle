@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ServiceTest {
+public class ServiceIntegrationTest {
 
     @Test
-    void testEncoding() {
+    void testService() {
         assertEquals(
                 "Hi \uD83D\uDE03",
-                Service.encode("Hi :)")
+                Service.printMessage(new MessageModel("Hi :)"))
         );
     }
 }
