@@ -22,10 +22,25 @@ jacoco {
 }
 
 tasks.test {
-    useJUnitPlatform() // JUnit5
+    useJUnitPlatform { // JUnit5
+        excludeTags("slow")
+    }
     reports {
         // ...
     }
+}
+
+val testSlow = tasks.register<Test>("testSlow") {
+    testClassesDirs = sourceSets.test.get().output.classesDirs
+    classpath = sourceSets.test.get().runtimeClasspath
+    useJUnitPlatform {
+        includeTags("slow")
+    }
+}
+
+// Add results of additional test task to 'testResultsElements' to be picked up in report aggregation
+configurations.testResultsElementsForTest {
+    outgoing.artifact(testSlow.map { it.binaryResultsDirectory })
 }
 
 dependencies {
