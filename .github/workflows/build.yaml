@@ -11,213 +11,44 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - name: 01
-        uses: gradle/gradle-build-action@v2.4.2
+      - name: Set up Gradle
+        uses: gradle/gradle-build-action@v2.5.1
         with:
-          gradle-version: 8.1.1
-          build-root-directory: 01_The_Settings_File/my-project
-          arguments: build --warning-mode=fail
-      - name: 02
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 02_The_Build_Files/my-project
-          arguments: build --warning-mode=fail
-      - name: 03
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 03_Plugins/my-project
-          arguments: build --warning-mode=fail
-      - name: 04
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 04_Tasks/my-project
-          arguments: build --warning-mode=fail
-      - name: 05
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 05_Lifecycle_Tasks/my-project
-          arguments: build --warning-mode=fail
-      - name: 06
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 06_Configuring_Task_Inputs_And_Outputs/my-project
-          arguments: build --warning-mode=fail
-      - name: 07
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 07_Implementing_Tasks_and_Extensions/my-project
-          arguments: build --warning-mode=fail
-      - name: 08
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 08_Declaring_Dependencis/my-project
-          arguments: build --warning-mode=fail
-      - name: 09A
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 09_Centralizing_Dependency_Versions/A_Dependency_Constrains_in_Convention_Plugin/my-project
-          arguments: build --warning-mode=fail
-      - name: 09B
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 09_Centralizing_Dependency_Versions/B_Platform_Project/my-project
-          arguments: build --warning-mode=fail
-      - name: 09C
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 09_Centralizing_Dependency_Versions/C_Version_Catalog/my-project
-          arguments: build --warning-mode=fail
-      - name: 09D
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 09_Centralizing_Dependency_Versions/D_Dependency_Locking/my-project
-          arguments: build --warning-mode=fail
-      - name: 10
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 10_Dependency_Version_Conflicts/my-project
-          arguments: build --warning-mode=fail
-      - name: 11
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 11_Capability_Conflicts/my-project
-          arguments: build --warning-mode=fail
-      - name: 12
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 12_Publishing_Libraries/my-project
-          arguments: build --warning-mode=fail
-      - name: 13
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 13_Aggregating_Custom_Artifacts/my-project
-          arguments: build --warning-mode=fail
-      - name: 14
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 14_Settings_Plugins/my-project
-          arguments: build --warning-mode=fail
-      - name: 16
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 16_Source_Sets/my-project
-          arguments: build --warning-mode=fail
-      - name: 16-android
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 16_Source_Sets/my-android-project
-          arguments: build --warning-mode=fail
-      - name: 16-kotlin-multi-platform
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 16_Source_Sets/my-kotlin-multi-platform-project
-          arguments: build --warning-mode=all
-      - name: 17
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 17_Feature_Variants/my-project
-          arguments: build --warning-mode=fail
-      - name: 18
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 18_Configuring_Testing/my-project
-          arguments: build --warning-mode=fail
-      - name: 19
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 19_The_Test_Task/my-project
-          arguments: build --warning-mode=fail
-      - name: 20
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 20_Test_Fixtures/my-project
-          arguments: build --warning-mode=fail
-      - name: 21
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 21_Test_and_Code_Coverage_Reporting/my-project
-          arguments: build --warning-mode=fail
-      - name: 22
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 22_The_JavaCompile_Task/my-project
-          arguments: build --warning-mode=fail
-      - name: 23
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 23_Caching/my-project
-          arguments: build --warning-mode=fail
-      - name: 24
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 24_Kotlin_DSL_and_Groovy_DSL/my-project
-          arguments: build --warning-mode=fail
-      - name: 25
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 25_Using_Java_to_configure_builds/my-project
-          arguments: build --warning-mode=fail
-      - name: 26
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 26_The_Classpath/my-project
-          arguments: run test --warning-mode=fail
-      - name: 27
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 27_Multiple_Compile_Classpaths/my-project
-          arguments: run --warning-mode=fail
-      - name: 28
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 28_Dependency_Analysis_Plugin/my-project
-          arguments: run --warning-mode=fail
-      - name: 29
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 29_Classpath_Collisions/my-project
-          arguments: run --warning-mode=fail
-      - name: 30
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 30_Security_Vulnerabilities/my-project
-          arguments: run --warning-mode=fail
-      - name: 31
-        uses: gradle/gradle-build-action@v2.4.2
-        with:
-          gradle-version: 8.1.1
-          build-root-directory: 31_The_Module_Path/my-project
-          arguments: run --warning-mode=fail
+          gradle-version: 8.2.1
+      - run: "gradle build --warning-mode=fail -p 01_The_Settings_File/my-project"
+      - run: "gradle build --warning-mode=fail -p 02_The_Build_Files/my-project"
+      - run: "gradle build --warning-mode=fail -p 03_Plugins/my-project"
+      - run: "gradle build --warning-mode=fail -p 04_Tasks/my-project"
+      - run: "gradle build --warning-mode=fail -p 05_Lifecycle_Tasks/my-project"
+      - run: "gradle build --warning-mode=fail -p 06_Configuring_Task_Inputs_And_Outputs/my-project"
+      - run: "gradle build --warning-mode=fail -p 07_Implementing_Tasks_and_Extensions/my-project"
+      - run: "gradle build --warning-mode=fail -p 08_Declaring_Dependencis/my-project"
+      - run: "gradle build --warning-mode=fail -p 09_Centralizing_Dependency_Versions/A_Dependency_Constrains_in_Convention_Plugin/my-project"
+      - run: "gradle build --warning-mode=fail -p 09_Centralizing_Dependency_Versions/B_Platform_Project/my-project"
+      - run: "gradle build --warning-mode=fail -p 09_Centralizing_Dependency_Versions/C_Version_Catalog/my-project"
+      - run: "gradle build --warning-mode=fail -p 09_Centralizing_Dependency_Versions/D_Dependency_Locking/my-project"
+      - run: "gradle build --warning-mode=fail -p 10_Dependency_Version_Conflicts/my-project"
+      - run: "gradle build --warning-mode=fail -p 11_Capability_Conflicts/my-project"
+      - run: "gradle build --warning-mode=fail -p 12_Publishing_Libraries/my-project"
+      - run: "gradle build --warning-mode=fail -p 13_Aggregating_Custom_Artifacts/my-project"
+      - run: "gradle build --warning-mode=fail -p 14_Settings_Plugins/my-project"
+      - run: "gradle build --warning-mode=fail -p 16_Source_Sets/my-project"
+      - run: "gradle build --warning-mode=fail -p 16_Source_Sets/my-android-project"
+      - run: "gradle build --warning-mode=fail -p 16_Source_Sets/my-kotlin-multi-platform-project"
+      - run: "gradle build --warning-mode=fail -p 17_Feature_Variants/my-project"
+      - run: "gradle build --warning-mode=fail -p 18_Configuring_Testing/my-project"
+      - run: "gradle build --warning-mode=fail -p 19_The_Test_Task/my-project"
+      - run: "gradle build --warning-mode=fail -p 20_Test_Fixtures/my-project"
+      - run: "gradle build --warning-mode=fail -p 21_Test_and_Code_Coverage_Reporting/my-project"
+      - run: "gradle build --warning-mode=fail -p 22_The_JavaCompile_Task/my-project"
+      - run: "gradle build --warning-mode=fail -p 23_Caching/my-project"
+      - run: "gradle build --warning-mode=fail -p 24_Kotlin_DSL_and_Groovy_DSL/my-project"
+      - run: "gradle build --warning-mode=fail -p 25_Using_Java_to_configure_builds/my-project"
+      - run: "gradle run   --warning-mode=fail -p 26_The_Classpath/my-project"
+      - run: "gradle run   --warning-mode=fail -p 27_Multiple_Compile_Classpaths/my-project"
+      - run: "gradle run   --warning-mode=all  -p 28_Dependency_Analysis_Plugin/my-project"
+      - run: "gradle run   --warning-mode=fail -p 29_Classpath_Collisions/my-project"
+      - run: "gradle run   --warning-mode=fail -p 30_Security_Vulnerabilities/my-project"
+      - run: "gradle run   --warning-mode=fail -p 31_The_Module_Path/my-project"
+      - run: "gradle build --warning-mode=fail -p 32_Artifact_Transforms/my-project"
+      - run: "gradle build --warning-mode=fail -p 33_Classpath_and_Module_Path_in_Testing/my-project"

@@ -13,4 +13,5 @@ dependencies {
     testImplementation("org.apache.commons:commons-text:1.5")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.3")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }

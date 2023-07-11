@@ -20,7 +20,7 @@ val applicationRuntimeClasspath = configurations.create("applicationRuntimeClass
     }
 }
 configurations.all {
-    if (this != applicationRuntimeClasspath) {
+    if (this != applicationRuntimeClasspath && isCanBeResolved()) {
         shouldResolveConsistentlyWith(applicationRuntimeClasspath)
     }
 }

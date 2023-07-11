@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation("com.autonomousapps:dependency-analysis-gradle-plugin:1.18.0")
+    implementation("com.autonomousapps:dependency-analysis-gradle-plugin:1.20.0")
 }

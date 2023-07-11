@@ -67,9 +67,11 @@ dependencies {
     "integrationTestImplementation"("commons-io:commons-io")
     "integrationTestImplementation"("org.junit.jupiter:junit-jupiter-api")
     "integrationTestRuntimeOnly"("org.junit.jupiter:junit-jupiter-engine")
+    "integrationTestRuntimeOnly"("org.junit.platform:junit-platform-launcher")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 

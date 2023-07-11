@@ -16,7 +16,9 @@ tasks.test {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.3")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 dependencies.constraints {
