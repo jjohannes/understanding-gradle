@@ -34,7 +34,7 @@ fun Configuration.useLatestVersionsAndLock() {
 }
 
 dependencies.components.all {
-    val lcVersion = id.version.toLowerCase()
+    val lcVersion = id.version.lowercase()
     if (lcVersion.contains("alpha")
         || lcVersion.contains("-b")
         || lcVersion.contains("beta")
