@@ -60,6 +60,10 @@ This gives you a general understanding of how things work in Gradle and enables 
 32. [Artifact Transforms](32_Artifact_Transforms)
 33. [Classpath and Module Path in Testing](33_Classpath_and_Module_Path_in_Testing)
 
+## More Fundamentals (Entries 34 - ??)
+
+34. [Properties and Providers](34_Properties_and_Providers)
+
 ## Need Gradle support?
 
 Contact me, if you need help with Gradle: [onepiece.Software](http://onepiece.software).
