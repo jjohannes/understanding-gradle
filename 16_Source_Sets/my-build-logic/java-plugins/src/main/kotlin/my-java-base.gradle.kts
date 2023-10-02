@@ -1,5 +1,5 @@
 import java.nio.file.Files
-import org.gradle.api.plugins.jvm.internal.JvmEcosystemUtilities
+import org.gradle.api.plugins.jvm.internal.JvmLanguageUtilities
 import org.gradle.kotlin.dsl.support.serviceOf
 
 plugins {
@@ -25,7 +25,7 @@ tasks.register<Jar>(extraFeature.jarTaskName) {
     archiveClassifier.set("extra-feature")
 }
 
-val jvm = serviceOf<JvmEcosystemUtilities>()
+val jvm = serviceOf<JvmLanguageUtilities>() // if this does not compile, use 'serviceOf<JvmEcosystemUtilities>()'
 jvm.registerJvmLanguageSourceDirectory(sourceSets.main.get(), "java17") {
     compiledWithJava {
         javaCompiler.set(javaToolchains.compilerFor {

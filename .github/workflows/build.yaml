@@ -14,7 +14,7 @@ jobs:
       - name: Set up Gradle
         uses: gradle/gradle-build-action@v2.5.1
         with:
-          gradle-version: 8.2.1
+          gradle-version: 8.4-rc-3
       - run: "gradle build --warning-mode=fail -p 01_The_Settings_File/my-project"
       - run: "gradle build --warning-mode=fail -p 02_The_Build_Files/my-project"
       - run: "gradle build --warning-mode=fail -p 03_Plugins/my-project"
@@ -39,7 +39,7 @@ jobs:
       - run: "gradle build --warning-mode=fail -p 18_Configuring_Testing/my-project"
       - run: "gradle build --warning-mode=fail -p 19_The_Test_Task/my-project"
       - run: "gradle build --warning-mode=fail -p 20_Test_Fixtures/my-project"
-      - run: "gradle build --warning-mode=fail -p 21_Test_and_Code_Coverage_Reporting/my-project"
+      - run: "gradle build --warning-mode=all  -p 21_Test_and_Code_Coverage_Reporting/my-project"
       - run: "gradle build --warning-mode=fail -p 22_The_JavaCompile_Task/my-project"
       - run: "gradle build --warning-mode=fail -p 23_Caching/my-project"
       - run: "gradle build --warning-mode=fail -p 24_Kotlin_DSL_and_Groovy_DSL/my-project"
