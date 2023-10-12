@@ -14,7 +14,7 @@ jobs:
       - name: Set up Gradle
         uses: gradle/gradle-build-action@v2.5.1
         with:
-          gradle-version: 8.4-rc-3
+          gradle-version: 8.4
       - run: "gradle build --warning-mode=fail -p 01_The_Settings_File/my-project"
       - run: "gradle build --warning-mode=fail -p 02_The_Build_Files/my-project"
       - run: "gradle build --warning-mode=fail -p 03_Plugins/my-project"
