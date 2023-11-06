@@ -53,3 +53,4 @@ jobs:
       - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 32_Artifact_Transforms/my-project"
       - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 33_Classpath_and_Module_Path_in_Testing/my-project"
       - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 34_Properties_and_Providers/my-project"
+      - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 35_Working_with_Files/my-project"

@@ -63,6 +63,7 @@ This gives you a general understanding of how things work in Gradle and enables 
 ## More Fundamentals (Entries 34 - ??)
 
 34. [Properties and Providers](34_Properties_and_Providers)
+35. [Working with Files](35_Working_with_Files)
 
 ## Need Gradle support?
 
