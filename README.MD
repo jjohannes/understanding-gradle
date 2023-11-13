@@ -64,6 +64,7 @@ This gives you a general understanding of how things work in Gradle and enables 
 
 34. [Properties and Providers](34_Properties_and_Providers)
 35. [Working with Files](35_Working_with_Files)
+36. [Task Actions](36_Task_Actions)
 
 ## Need Gradle support?
 
