@@ -5,16 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: git clone
-        uses: actions/checkout@v3.5.2
+        uses: actions/checkout@v4.1.1
       - name: Set up JDK
-        uses: actions/setup-java@v3.11.0
+        uses: actions/setup-java@v4.0.0
         with:
           distribution: temurin
           java-version: 17
       - name: Set up Gradle
-        uses: gradle/gradle-build-action@v2.5.1
+        uses: gradle/gradle-build-action@v2.11.1
         with:
-          gradle-version: 8.6-20231118001259+0000
+          gradle-version: 8.6-rc-1
       - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 01_The_Settings_File/my-project"
       - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 02_The_Build_Files/my-project"
       - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 03_Plugins/my-project"
