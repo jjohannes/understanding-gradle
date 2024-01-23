@@ -34,10 +34,12 @@ jvm.registerJvmLanguageSourceDirectory(sourceSets.main.get(), "java17") {
         classpath = sourceSets.main.get().compileClasspath
         doLast {
             val destRoot = destinationDirectory.get().asFile
-            val destVersion17 = File(destRoot, "META-INF/version/17").also { it.mkdirs() }
+            val destVersions = File(destRoot, "META-INF/versions/17").also { it.mkdirs() }
+            destVersions.deleteRecursively()
+            destVersions.mkdirs()
             destRoot.listFiles()?.forEach {
                 if (it.name != "META-INF") {
-                    Files.move(it.toPath(), File(destVersion17, it.name).toPath())
+                    Files.move(it.toPath(), File(destVersions, it.name).toPath())
                 }
             }
         }

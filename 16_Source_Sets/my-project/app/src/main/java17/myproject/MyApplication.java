@@ -9,7 +9,7 @@ public final class MyApplication {
 
     public static void main(final String[] args) {
         Service.printMessage(new MessageModel(readeMessageTxt()));
-        Service.printMessage(new MessageModel("Java 11"));
+        Service.printMessage(new MessageModel("Java 17"));
     }
 
     static String readeMessageTxt() {
