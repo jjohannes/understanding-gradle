@@ -1,7 +1,7 @@
 package myproject.services;
 
 import com.google.errorprone.annotations.CanIgnoreReturnValue;
-import mypproject.shared.util.EmojiEncodeUtil;
+import myproject.shared.util.EmojiEncodeUtil;
 import myproject.data.MessageModel;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.LoggerFactory;

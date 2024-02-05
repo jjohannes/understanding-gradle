@@ -1,4 +1,4 @@
-package mypproject.shared.util;
+package myproject.shared.util;
 
 public final class EmojiEncodeUtil {
 
