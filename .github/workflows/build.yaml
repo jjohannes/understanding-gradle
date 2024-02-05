@@ -12,9 +12,9 @@ jobs:
           distribution: temurin
           java-version: 17
       - name: Set up Gradle
-        uses: gradle/gradle-build-action@v2.11.1
+        uses: gradle/actions/setup-gradle@v3.0.0
         with:
-          gradle-version: 8.6-rc-1
+          gradle-version: 8.6
       - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 01_The_Settings_File/my-project"
       - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 02_The_Build_Files/my-project"
       - run: "gradle build -Dorg.gradle.kotlin.dsl.skipMetadataVersionCheck=false --configuration-cache --warning-mode=fail -p 03_Plugins/my-project"
