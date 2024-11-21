@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("org.gradlex.java-ecosystem-capabilities")
+    id("org.gradlex.jvm-dependency-conflict-resolution")
 }
 
 group = "org.example.my-app"

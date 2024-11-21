@@ -3,6 +3,6 @@ plugins {
 }
 
 dependencies {
-    implementation("io.fuchs.gradle.classpath-collision-detector:classpath-collision-detector:0.3")
-    implementation("org.gradlex:java-ecosystem-capabilities:1.0")
+    implementation("io.fuchs.gradle.classpath-collision-detector:classpath-collision-detector:1.0.0")
+    implementation("org.gradlex:jvm-dependency-conflict-resolution:2.1.2")
 }
