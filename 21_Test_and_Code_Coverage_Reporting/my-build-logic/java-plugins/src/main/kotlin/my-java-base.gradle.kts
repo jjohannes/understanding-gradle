@@ -11,7 +11,6 @@ java {
 }
 
 testing.suites.register<JvmTestSuite>("integrationTest") {
-    testType.set(TestSuiteType.INTEGRATION_TEST)
     configurations[sources.implementationConfigurationName].extendsFrom(
         configurations.implementation.get()
     )

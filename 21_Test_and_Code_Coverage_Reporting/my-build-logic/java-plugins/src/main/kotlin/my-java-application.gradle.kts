@@ -14,10 +14,11 @@ tasks.testCodeCoverageReport {
                     withVariantReselection()
                     attributes {
                         attribute(Category.CATEGORY_ATTRIBUTE, objects.named(Category.VERIFICATION))
-                        attribute(TestSuiteType.TEST_SUITE_TYPE_ATTRIBUTE, objects.named(TestSuiteType.INTEGRATION_TEST))
+                        attribute(TestSuiteName.TEST_SUITE_NAME_ATTRIBUTE, objects.named("integrationTest"))
                         attribute(VerificationType.VERIFICATION_TYPE_ATTRIBUTE, objects.named(VerificationType.JACOCO_RESULTS))
                         attribute(ArtifactTypeDefinition.ARTIFACT_TYPE_ATTRIBUTE, ArtifactTypeDefinition.BINARY_DATA_TYPE)
                     }
+
                 }.files
     )
 }
@@ -31,7 +32,7 @@ tasks.testAggregateTestReport {
                 withVariantReselection()
                 attributes {
                     attribute(Category.CATEGORY_ATTRIBUTE, objects.named(Category.VERIFICATION))
-                    attribute(TestSuiteType.TEST_SUITE_TYPE_ATTRIBUTE, objects.named(TestSuiteType.INTEGRATION_TEST))
+                    attribute(TestSuiteName.TEST_SUITE_NAME_ATTRIBUTE, objects.named("integrationTest"))
                     attribute(VerificationType.VERIFICATION_TYPE_ATTRIBUTE, objects.named(VerificationType.TEST_RESULTS))
                 }
             }.files
