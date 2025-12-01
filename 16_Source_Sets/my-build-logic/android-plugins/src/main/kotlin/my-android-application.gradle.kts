@@ -13,9 +13,11 @@ android {
     sourceSets.getByName("main") {
         // get and configure an 'AndroidSourceSet'
     }
+}
 
-    applicationVariants.matching { it.name == "debug" }.all {
-        sourceSets.find { it.name == "debug" }!!.apply {
+androidComponents {
+    onVariants() { variant ->
+        sourceSets.find { it.name == "debug" }?.apply {
             // get and configure an Android 'SourceProvider' (Build Type and Flavor specific)
         }
     }

@@ -14,7 +14,7 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: 9.0.0-rc-1
+          gradle-version: 9.3.0-rc-1
           build-scan-publish: true
           build-scan-terms-of-use-url: "https://gradle.com/terms-of-service"
           build-scan-terms-of-use-agree: "yes"
@@ -35,9 +35,9 @@ jobs:
       - run: "gradle build --configuration-cache --warning-mode=fail -p 12_Publishing_Libraries/my-project"
       - run: "gradle build --configuration-cache --warning-mode=fail -p 13_Aggregating_Custom_Artifacts/my-project"
       - run: "gradle build --configuration-cache --warning-mode=fail -p 14_Settings_Plugins/my-project"
-      - run: "gradle build --configuration-cache --warning-mode=fail -p 16_Source_Sets/my-project"
-      - run: "gradle build --configuration-cache --warning-mode=fail -p 16_Source_Sets/my-android-project"
-      - run: "gradle build --configuration-cache --warning-mode=fail -p 16_Source_Sets/my-kotlin-multi-platform-project"
+      - run: "gradle build --configuration-cache --warning-mode=all  -p 16_Source_Sets/my-project" # https://youtrack.jetbrains.com/issue/KT-78620
+      - run: "gradle build --configuration-cache --warning-mode=all  -p 16_Source_Sets/my-android-project" # https://youtrack.jetbrains.com/issue/KT-78620
+      - run: "gradle build --configuration-cache --warning-mode=all  -p 16_Source_Sets/my-kotlin-multi-platform-project" # https://youtrack.jetbrains.com/issue/KT-78620
       - run: "gradle build --configuration-cache --warning-mode=fail -p 17_Feature_Variants/my-project"
       - run: "gradle build --configuration-cache --warning-mode=fail -p 18_Configuring_Testing/my-project"
       - run: "gradle build --configuration-cache --warning-mode=fail -p 19_The_Test_Task/my-project"
