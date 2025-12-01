@@ -83,5 +83,5 @@ dependencies {
 dependencies.constraints {
     implementation("org.apache.commons:commons-lang3:3.9")
     testImplementation("junit:junit:4.13.2")
-    add("integrationTestImplementation", "commons-io:commons-io:2.11.0")
+    add("integrationTestImplementation", "commons-io:commons-io:2.21.0")
 }
