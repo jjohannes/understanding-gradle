@@ -7,7 +7,7 @@ val compileClasspath = configurations.create("compileClasspath") {
 
 dependencies {
     api("javax.activation:activation:1.1.1")
-    implementation("commons-io:commons-io:2.6")
+    implementation("commons-io:commons-io:2.21.0")
 }
 
 val compileJava = tasks.register<JavaCompile>("compileJava") {
