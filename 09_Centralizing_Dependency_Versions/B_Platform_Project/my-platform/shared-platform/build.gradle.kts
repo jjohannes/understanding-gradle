@@ -7,7 +7,7 @@ group = "org.example.my-app"
 javaPlatform.allowDependencies()
 
 dependencies {
-    api(platform("com.fasterxml.jackson:jackson-bom:2.12.4"))
+    api(platform("com.fasterxml.jackson:jackson-bom:2.20.1"))
     api(platform("org.springframework.boot:spring-boot-dependencies:2.5.4"))
 }
 
