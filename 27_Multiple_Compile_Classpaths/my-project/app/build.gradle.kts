@@ -15,8 +15,8 @@ val runtimeClasspath = configurations.create("runtimeClasspath") {
 
 dependencies {
     implementation(project(":module"))
-    implementation("org.slf4j:slf4j-api:2.0.3")
-    runtimeOnly("org.slf4j:slf4j-simple:2.0.3")
+    implementation("org.slf4j:slf4j-api:2.0.17")
+    runtimeOnly("org.slf4j:slf4j-simple:2.0.17")
 }
 
 val compileJava = tasks.register<JavaCompile>("compileJava") {
