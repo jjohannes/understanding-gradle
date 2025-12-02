@@ -50,7 +50,7 @@ dependencies {
 
 // Centralized versions
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.8.2"))
+    testImplementation(platform("org.junit:junit-bom:5.14.1"))
 }
 dependencies.constraints {
     implementation("org.apache.commons:commons-lang3:3.20.0")
