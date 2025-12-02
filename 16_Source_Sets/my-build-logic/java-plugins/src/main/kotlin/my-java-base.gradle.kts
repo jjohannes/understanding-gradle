@@ -53,8 +53,8 @@ tasks.jar {
 }
 
 dependencies.constraints {
-    implementation("org.apache.commons:commons-lang3:3.9")
-    add("extraFeatureImplementation", "org.apache.commons:commons-lang3:3.9")
+    implementation("org.apache.commons:commons-lang3:3.20.0")
+    add("extraFeatureImplementation", "org.apache.commons:commons-lang3:3.20.0")
 }
 
 dependencies {

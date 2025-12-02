@@ -19,5 +19,5 @@ tasks.test {
 
 // Centralized versions
 dependencies.constraints {
-    implementation("org.apache.commons:commons-lang3:3.9")
+    implementation("org.apache.commons:commons-lang3:3.20.0")
 }
