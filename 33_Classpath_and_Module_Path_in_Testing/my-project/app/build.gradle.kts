@@ -8,7 +8,7 @@ application {
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-lang3:3.6")
+    implementation("org.apache.commons:commons-lang3:3.20.0")
 
     testImplementation("org.apache.commons:commons-text:1.5")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.3")
