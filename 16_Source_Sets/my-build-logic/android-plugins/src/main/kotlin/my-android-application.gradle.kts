@@ -16,9 +16,7 @@ android {
 }
 
 androidComponents {
-    onVariants() { variant ->
-        sourceSets.find { it.name == "debug" }?.apply {
-            // get and configure an Android 'SourceProvider' (Build Type and Flavor specific)
-        }
+    onVariants { variant ->
+        // get and configure an Android 'SourceProvider' (Build Type and Flavor specific)
     }
 }
