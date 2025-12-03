@@ -12,7 +12,7 @@ jobs:
           distribution: temurin
           java-version: 17
       - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v5
         with:
           gradle-version: 9.3.0-rc-1
           build-scan-publish: true
