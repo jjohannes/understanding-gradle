@@ -30,6 +30,6 @@ dependencies.constraints {
 configurations.all {
     resolutionStrategy.capabilitiesResolution.withCapability("org.slf4j", "slf4j-impl") {
         select("org.slf4j:slf4j-simple:0")
-        select("ch.qos.logback:logback-classic:0")
+        select("ch.qos.logback:logback-classic:0.9.30")
     }
 }
