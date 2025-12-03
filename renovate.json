@@ -3,5 +3,12 @@
   "extends": [
     "config:recommended",
     ":automergeAll"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["gradle"],
+      "matchCurrentVersion": "0",
+      "enabled": false
+    }
   ]
 }
