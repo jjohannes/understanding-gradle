@@ -49,8 +49,8 @@ abstract public class MyJavaBasePlugin implements Plugin<Project> {
             t.getOptions().setEncoding("UTF-8");
         });
 
-        // dependencies.constraints { implementation("org.apache.commons:commons-lang3:3.9") }
-        dependencies.getConstraints().add("implementation", "org.apache.commons:commons-lang3:3.9");
+        // dependencies.constraints { implementation("org.apache.commons:commons-lang3:3.20.0") }
+        dependencies.getConstraints().add("implementation", "org.apache.commons:commons-lang3:3.20.0");
         // JavaPlugin.IMPLEMENTATION_CONFIGURATION_NAME
     }
 }
