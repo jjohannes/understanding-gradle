@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0-RC2")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0-RC3")
 }
