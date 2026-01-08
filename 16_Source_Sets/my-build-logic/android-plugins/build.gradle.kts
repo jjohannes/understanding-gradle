@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation("com.android.tools.build:gradle:9.0.0-rc02")
+    implementation("com.android.tools.build:gradle:9.0.0-rc03")
 }
