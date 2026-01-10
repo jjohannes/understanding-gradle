@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation("org.owasp:dependency-check-gradle:12.1.9")
+    implementation("org.owasp:dependency-check-gradle:12.2.0")
 }
