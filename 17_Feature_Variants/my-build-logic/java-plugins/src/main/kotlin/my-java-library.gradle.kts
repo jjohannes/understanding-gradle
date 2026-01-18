@@ -72,6 +72,6 @@ java.registerFeature(xml.name) {
 
 // Centralized versions
 dependencies {
-    "jsonImplementation"(platform("com.fasterxml.jackson:jackson-bom:2.20.1"))
-    "xmlImplementation"(platform("com.fasterxml.jackson:jackson-bom:2.20.1"))
+    "jsonImplementation"(platform("com.fasterxml.jackson:jackson-bom:2.21.0"))
+    "xmlImplementation"(platform("com.fasterxml.jackson:jackson-bom:2.21.0"))
 }
