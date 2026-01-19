@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation("org.gradlex:java-module-dependencies:1.11")
+    implementation("org.gradlex:java-module-dependencies:1.12")
 }
