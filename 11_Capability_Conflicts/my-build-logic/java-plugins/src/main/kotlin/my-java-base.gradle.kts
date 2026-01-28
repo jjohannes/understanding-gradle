@@ -24,7 +24,7 @@ dependencies {
 dependencies.constraints {
     implementation("org.slf4j:slf4j-api:2.0.17")
     implementation("org.slf4j:slf4j-simple:2.0.17")
-    implementation("io.dropwizard:dropwizard-core:5.0.0")
+    implementation("io.dropwizard:dropwizard-core:5.0.1")
 }
 
 configurations.all {
