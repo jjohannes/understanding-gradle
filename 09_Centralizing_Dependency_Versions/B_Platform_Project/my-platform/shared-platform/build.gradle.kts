@@ -21,5 +21,5 @@ dependencies {
 
 // Constrains for Gradle plugins
 dependencies.constraints {
-    api("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0")
+    api("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.10")
 }
