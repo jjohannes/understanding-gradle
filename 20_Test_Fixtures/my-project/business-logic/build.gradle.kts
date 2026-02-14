@@ -12,3 +12,11 @@ dependencies {
     //     capabilities { requireCapability("org.example.my-app:data-model-test-fixtures") }
     // }
 }
+
+tasks.test {
+    testLogging {
+        showStandardStreams = true
+    }
+
+    systemProperty("test.tempdir.baseDir", layout.buildDirectory.dir("junit").get().asFile.absolutePath)
+}
