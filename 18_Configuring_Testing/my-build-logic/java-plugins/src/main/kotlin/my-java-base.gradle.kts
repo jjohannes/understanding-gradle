@@ -77,8 +77,8 @@ dependencies {
 
 // Centralized versions
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:6.0.3"))
-    "integrationTestImplementation"(platform("org.junit:junit-bom:6.0.3"))
+    testImplementation(platform("org.junit:junit-bom:6.1.0"))
+    "integrationTestImplementation"(platform("org.junit:junit-bom:6.1.0"))
 }
 dependencies.constraints {
     implementation("org.apache.commons:commons-lang3:3.20.0")
