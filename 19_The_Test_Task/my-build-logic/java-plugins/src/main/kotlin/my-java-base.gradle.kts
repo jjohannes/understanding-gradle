@@ -51,7 +51,7 @@ tasks.test {
 
 // centralized versions
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:6.1.0"))
+    testImplementation(platform("org.junit:junit-bom:6.1.1"))
     constraints {
         implementation("org.apache.commons:commons-lang3:3.20.0")
     }
