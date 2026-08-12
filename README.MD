@@ -60,11 +60,15 @@ This gives you a general understanding of how things work in Gradle and enables 
 32. [Artifact Transforms](32_Artifact_Transforms)
 33. [Classpath and Module Path in Testing](33_Classpath_and_Module_Path_in_Testing)
 
-## More Fundamentals (Entries 34 - ??)
+## More Fundamentals (Entries 34 - 36)
 
 34. [Properties and Providers](34_Properties_and_Providers)
 35. [Working with Files](35_Working_with_Files)
 36. [Task Actions](36_Task_Actions)
+
+## CI and Testing (Entries 37 - ??)
+
+37. [Gradle on CI: GitHub Actions and TestLens](37_CI_GitHub_Actions)
 
 ## Need Gradle support?
 
