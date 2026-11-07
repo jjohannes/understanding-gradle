@@ -8,7 +8,7 @@ javaPlatform.allowDependencies()
 
 dependencies {
     api(platform("com.fasterxml.jackson:jackson-bom:2.22.4"))
-    api(platform("org.springframework.boot:spring-boot-dependencies:4.1.1"))
+    api(platform("org.springframework.boot:spring-boot-dependencies:4.1.2"))
 }
 
 // These constraints are part of the 'spring-boot-dependencies' platform and we
