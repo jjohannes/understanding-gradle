@@ -9,8 +9,8 @@ application {
 dependencies {
     implementation(project(":module"))
     implementation("javax.activation:activation:1.1.1")
-    implementation("org.slf4j:slf4j-api:2.0.18")
-    runtimeOnly("org.slf4j:slf4j-simple:2.0.18")
+    implementation("org.slf4j:slf4j-api:2.0.20")
+    runtimeOnly("org.slf4j:slf4j-simple:2.0.20")
 }
 
 // dependencies.constraints {
