@@ -23,7 +23,7 @@ tasks.test {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:6.0.2"))
     constraints {
-        implementation("org.apache.commons:commons-lang3:3.20.0")
+        implementation("org.apache.commons:commons-lang3:3.22.0")
     }
 }
 
