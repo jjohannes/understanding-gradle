@@ -6,7 +6,7 @@ group = "org.example.my-app"
 version = "1.0"
 
 dependencies.constraints {
-    implementation("org.apache.commons:commons-lang3:3.20.0")
+    implementation("org.apache.commons:commons-lang3:3.22.0")
 }
 
 java {
