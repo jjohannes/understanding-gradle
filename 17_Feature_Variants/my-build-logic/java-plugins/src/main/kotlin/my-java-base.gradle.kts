@@ -15,5 +15,5 @@ tasks.compileJava {
 
 // Centralized versions
 dependencies.constraints {
-    implementation("org.apache.commons:commons-lang3:3.20.0")
+    implementation("org.apache.commons:commons-lang3:3.22.0")
 }

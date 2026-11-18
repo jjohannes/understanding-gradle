@@ -8,7 +8,7 @@ version = "1.0"
 dependencies.constraints {
     implementation("org.example.my-app:shared-utils:1.0")
 
-    implementation("org.apache.commons:commons-lang3:3.20.0")
+    implementation("org.apache.commons:commons-lang3:3.22.0")
     implementation("org.slf4j:slf4j-api:2.0.20")
     implementation("org.slf4j:slf4j-simple:2.0.20")
 }
