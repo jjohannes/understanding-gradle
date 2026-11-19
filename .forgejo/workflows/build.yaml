@@ -4,10 +4,19 @@ on:
     branches: [ main, groovy-dsl ]
   pull_request:
     branches: [ main ]
+env:
+  ANDROID_HOME: /opt/android-sdk
 jobs:
   gradle-build:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Android SDK
+        run: |
+          mkdir $ANDROID_HOME
+          cd $ANDROID_HOME
+          curl --silent https://dl.google.com/android/repository/commandlinetools-linux-15859902_latest.zip -o cmdline-tools.zip
+          unzip -q cmdline-tools.zip
+          ./cmdline-tools/bin/android sdk install platforms/android-36 --no-metrics
       - name: git clone
         uses: actions/checkout@v7
       - name: Set up JDK
