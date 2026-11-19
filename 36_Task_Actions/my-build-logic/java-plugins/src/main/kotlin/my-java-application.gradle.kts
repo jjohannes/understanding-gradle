@@ -2,6 +2,10 @@ plugins {
     id("application")
 }
 
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
 tasks.compileJava {
     actions.clear() // Remove compile action from JavaCompile task
     doFirst {
@@ -9,8 +13,9 @@ tasks.compileJava {
     }
     doLast {
         this as JavaCompile
-        Runtime.getRuntime().exec( // Add our own 'java compile' implementation
-            "javac ${source.asPath} -d ${destinationDirectory.get().asFile}").waitFor()
+        val javac = javaCompiler.get().executablePath.asFile.toString()
+        Runtime.getRuntime().exec(arrayOf( // Add our own 'java compile' implementation
+            javac, source.asPath, "-d", destinationDirectory.get().asFile.toString())).waitFor()
         println("Compilation finished: ${inputs.sourceFiles.asPath}")
     }
 }
