@@ -1,5 +1,9 @@
 name: Build All
-on: [ push, pull_request ]
+on:
+  push:
+    branches: [ main, groovy-dsl ]
+  pull_request:
+    branches: [ main ]
 jobs:
   gradle-build:
     runs-on: ubuntu-latest
