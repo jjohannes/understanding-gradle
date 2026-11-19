@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/23.png" width="640">](https://www.youtube.com/watch?v=nHb0kIcTrFE&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/23.png" width="640">](https://www.youtube.com/watch?v=nHb0kIcTrFE&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 What are the caching mechanisms Gradle uses? Where, and why, to configure them?
 

@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/24.png" width="640">](https://www.youtube.com/watch?v=pKsn2eZWQK0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/24.png" width="640">](https://www.youtube.com/watch?v=pKsn2eZWQK0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 How do the Kotlin DSL and the Groovy DSL work and what are the major differences between them?
 
@@ -12,13 +12,13 @@ This sample is best explored in [IntelliJ IDEA](https://www.jetbrains.com/idea/d
 Open **`24_Kotlin_DSL_and_Groovy_DSL/my-project`** in IDEA and confirm with _Trust Project_.
 
 You can switch between the 
-[Kotlin variant](https://github.com/jjohannes/understanding-gradle/tree/main)   
+[Kotlin variant](https://codeberg.org/jjohannes/understanding-gradle)
 and 
-[Groovy variant](https://github.com/jjohannes/understanding-gradle/tree/groovy-dsl)
+[Groovy variant](https://codeberg.org/jjohannes/understanding-gradle/src/branch/groovy-dsl)
 of this and all other examples by switching between 
-[the main](https://github.com/jjohannes/understanding-gradle/tree/main)  
+[the main](https://codeberg.org/jjohannes/understanding-gradle)
 and 
-[the groovy-dsl](https://github.com/jjohannes/understanding-gradle/tree/groovy-dsl)
+[the groovy-dsl](https://codeberg.org/jjohannes/understanding-gradle/src/branch/groovy-dsl)
 branch of this repository.
 
 ## Gradle User Manual references

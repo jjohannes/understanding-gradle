@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/22.png" width="640">](https://www.youtube.com/watch?v=wFewehz6rW8&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/22.png" width="640">](https://www.youtube.com/watch?v=wFewehz6rW8&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 What are the different options to perform Java compilation with the JavaCompile Task?
 How to control memory usage and parallelism through task configuration and gradle.properties?

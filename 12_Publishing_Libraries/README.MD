@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/12.png" width="640">](https://www.youtube.com/watch?v=8z5KFCLZDd0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/12.png" width="640">](https://www.youtube.com/watch?v=8z5KFCLZDd0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 What is a Maven Repository and how do I publish my libraries/components to it?
 
@@ -27,7 +27,7 @@ To help you find the right places, here are some deep links into the Manual on t
 * [Customizing Publishing](https://docs.gradle.org/current/userguide/publishing_customization.html)
 * [Consumable Configurations (Variants)](https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:resolvable-consumable-configs)
 * [Understanding Gradle Module Metadata](https://docs.gradle.org/current/userguide/publishing_gradle_module_metadata.html)
-* [Publishing Gradle Module Metadata with Maven](https://github.com/jjohannes/gradle-module-metadata-maven-plugin)
+* [Publishing Gradle Module Metadata with Maven](https://github.com/gradlex-org/gradle-module-metadata-maven-plugin)
 
 ## Need Gradle support?
 

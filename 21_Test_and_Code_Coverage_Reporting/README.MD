@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/21.png" width="640">](https://www.youtube.com/watch?v=uZvzWlP9BYE&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/21.png" width="640">](https://www.youtube.com/watch?v=uZvzWlP9BYE&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 How are code coverage (JaCoCo) reports activated and how to produce aggregated reports for a complete code base?
 

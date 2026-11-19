@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/25.png" width="640">](https://www.youtube.com/watch?v=XnVZdMROVG8&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/25.png" width="640">](https://www.youtube.com/watch?v=XnVZdMROVG8&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 No XML, no Groovy, no Kotlin required - just use Java to build your Java projects with Gradle!
 

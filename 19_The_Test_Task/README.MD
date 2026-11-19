@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/19.png" width="640">](https://www.youtube.com/watch?v=YJjNQJSaFww&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/19.png" width="640">](https://www.youtube.com/watch?v=YJjNQJSaFww&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 How does the Test Task execute tests (in parallel) and why are Worker Processes important for that?
 

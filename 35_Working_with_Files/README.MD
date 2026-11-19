@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/35.png" width="640">](https://www.youtube.com/watch?v=LhVhC86FVIY&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/35.png" width="640">](https://www.youtube.com/watch?v=LhVhC86FVIY&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 How to copy and package files with Gradle in an elegant way?
 

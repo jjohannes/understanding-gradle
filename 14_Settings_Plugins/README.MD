@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/14.png" width="640">](https://www.youtube.com/watch?v=tlx3tzuLSWk&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/14.png" width="640">](https://www.youtube.com/watch?v=tlx3tzuLSWk&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 Define the structure of multiple Gradle builds in a central place with Settings Plugins.
 

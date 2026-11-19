@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/20.png" width="640">](https://www.youtube.com/watch?v=fSRN6YKa5B0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/20.png" width="640">](https://www.youtube.com/watch?v=fSRN6YKa5B0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 How to share code among tests in different projects or builds?
 

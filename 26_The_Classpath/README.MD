@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/26.png" width="640">](https://www.youtube.com/watch?v=HqAp9JBl2_U&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/26.png" width="640">](https://www.youtube.com/watch?v=HqAp9JBl2_U&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 How does modularity in Java work (Part 1): What is the Classpath?
 

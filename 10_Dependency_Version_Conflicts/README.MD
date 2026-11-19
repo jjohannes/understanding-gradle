@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/10.png" width="640">](https://www.youtube.com/watch?v=YYWhfy6c2YQ&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/10.png" width="640">](https://www.youtube.com/watch?v=YYWhfy6c2YQ&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 What are dependency version conflicts? Why do I have to deal with them? How can I get most out of Gradle's Consistent Resolution feature?
 

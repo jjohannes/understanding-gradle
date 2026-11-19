@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/28.png" width="640">](https://www.youtube.com/watch?v=Lipf5piizZc&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/28.png" width="640">](https://www.youtube.com/watch?v=Lipf5piizZc&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 How does modularity in Java work (Part 3): Keep the Compile Classpaths of your modules clean with the Dependency Analysis plugin
 

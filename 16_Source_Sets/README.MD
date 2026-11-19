@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/16.png" width="640">](https://www.youtube.com/watch?v=74PDtHkS_w4&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/16.png" width="640">](https://www.youtube.com/watch?v=74PDtHkS_w4&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 What are Source Sets and how to configure them?
 

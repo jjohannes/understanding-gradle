@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/34.png" width="640">](https://www.youtube.com/watch?v=n8Tgr4aLB18&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/34.png" width="640">](https://www.youtube.com/watch?v=n8Tgr4aLB18&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 What are the Property and Provider concepts in Gradle and why were they introduced?
 

@@ -6,8 +6,8 @@ The series introduces the concepts of the [Gradle Build Tool](https://github.com
 Rather than explaining each feature in detail, the series initially aims at explaining fundamental concepts and patterns.
 This gives you a general understanding of how things work in Gradle and enables you to structure your project in a readable and maintainable way.
 
-[Switch all examples to Kotlin DSL](https://github.com/jjohannes/understanding-gradle/tree/main)  
-[Switch all examples to Groovy DSL](https://github.com/jjohannes/understanding-gradle/tree/groovy-dsl)
+[Switch all examples to Kotlin DSL](https://codeberg.org/jjohannes/understanding-gradle)    
+[Switch all examples to Groovy DSL](https://codeberg.org/jjohannes/understanding-gradle/src/branch/groovy-dsl)
 
 ## The Fundamentals (First 14 Entries)
 
@@ -29,9 +29,9 @@ This gives you a general understanding of how things work in Gradle and enables 
 
 ## Full Project Setup (Entry 15)
 
-- [Full Java Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/main)
-- [Full Android Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/android)
-- [Full Java Module System Project Setup](https://github.com/jjohannes/gradle-project-setup-howto/tree/java_module_system)
+- [Full Java Project Setup](https://codeberg.org/jjohannes/gradle-project-setup-howto)
+- [Full Android Project Setup](https://codeberg.org/jjohannes/gradle-project-setup-howto/src/branch/android)
+- [Full Java Module System Project Setup](https://codeberg.org/jjohannes/gradle-project-setup-howto/src/branch/java_module_system)
 
 ## JVM Development Basics (Entries 16 - 22)
 

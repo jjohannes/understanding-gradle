@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/02.png" width="640">](https://www.youtube.com/watch?v=OKjE_Lt_66U&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/02.png" width="640">](https://www.youtube.com/watch?v=OKjE_Lt_66U&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 In this second entry in my *Understanding Gradle* series we look at what the central configuration scripts of Gradle – the Build Files – should be used for.
 

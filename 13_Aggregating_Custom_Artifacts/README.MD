@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/13.png" width="640">](https://www.youtube.com/watch?v=2gPJD0mAres&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/13.png" width="640">](https://www.youtube.com/watch?v=2gPJD0mAres&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 How do I access artifacts from other projects to aggregate information
 and how does that relate to variant-aware dependency management?

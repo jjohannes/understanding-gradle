@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/17.png" width="640">](https://www.youtube.com/watch?v=XCzyUESaBHQ&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/17.png" width="640">](https://www.youtube.com/watch?v=XCzyUESaBHQ&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 What are Features (aka Feature Variants) in Java projects and how are they empowered by variant-aware dependency management?
 

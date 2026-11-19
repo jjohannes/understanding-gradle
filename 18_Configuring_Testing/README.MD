@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/18.png" width="640">](https://www.youtube.com/watch?v=7f_gBvGQN_0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/18.png" width="640">](https://www.youtube.com/watch?v=7f_gBvGQN_0&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 Where to place test code for different types of tests and how to select a test framework?
 

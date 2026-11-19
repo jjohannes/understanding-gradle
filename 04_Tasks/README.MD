@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/04.png" width="640">](https://www.youtube.com/watch?v=9tY4MFEgmgM&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/04.png" width="640">](https://www.youtube.com/watch?v=9tY4MFEgmgM&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 Let's talk about the basics of the Task concept in Gradle.
 

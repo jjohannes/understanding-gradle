@@ -2,7 +2,7 @@
 
 **👇 click thumbnail to watch video**
 
-[<img src="https://onepiecesoftware.github.io/img/videos/08.png" width="640">](https://www.youtube.com/watch?v=igug9tbl4J4&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
+[<img src="https://onepiece.software/img/videos/08.png" width="640">](https://www.youtube.com/watch?v=igug9tbl4J4&list=PLWQK2ZdV4Yl2k2OmC_gsjDpdIBTN0qqkE)
 
 How to declare dependencies using group/name coordinates and what are Configurations (scopes... buckets...)?
 
