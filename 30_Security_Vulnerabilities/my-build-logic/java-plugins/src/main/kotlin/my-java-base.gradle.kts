@@ -16,7 +16,7 @@ val applicationRuntimeClasspath = configurations.create("applicationRuntimeClass
         attribute(Usage.USAGE_ATTRIBUTE, objects.named(Usage.JAVA_RUNTIME))
     }
     withDependencies {
-        add(project.dependencies.create(project(":app")))
+        add(project.dependencies.create(project.dependencies.project(":app")))
     }
 }
 configurations.all {
